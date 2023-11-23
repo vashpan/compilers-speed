@@ -1,7 +1,6 @@
 // __HEADER_BEGIN__
 //
-// C++ compile time test program
-// 
+// C compile time test program
 //
 
 #include <cstdlib>

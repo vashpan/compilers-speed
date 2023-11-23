@@ -1,7 +1,6 @@
 
 //
-// C++ compile time test program
-// 
+// C compile time test program
 //
 
 #include <cstdlib>
@@ -50007,6 +50006,50006 @@ void quickSort1000(int arr[], int start, int end) {
 
 	// Sorting the right part
 	quickSort1000(arr, p + 1, end);
+}
+
+// 
+
+int partition1001(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1001(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1001(arr, start, end);
+
+	// Sorting the left part
+	quickSort1001(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1001(arr, p + 1, end);
+}
+
+// 
+
+int partition1002(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1002(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1002(arr, start, end);
+
+	// Sorting the left part
+	quickSort1002(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1002(arr, p + 1, end);
+}
+
+// 
+
+int partition1003(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1003(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1003(arr, start, end);
+
+	// Sorting the left part
+	quickSort1003(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1003(arr, p + 1, end);
+}
+
+// 
+
+int partition1004(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1004(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1004(arr, start, end);
+
+	// Sorting the left part
+	quickSort1004(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1004(arr, p + 1, end);
+}
+
+// 
+
+int partition1005(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1005(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1005(arr, start, end);
+
+	// Sorting the left part
+	quickSort1005(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1005(arr, p + 1, end);
+}
+
+// 
+
+int partition1006(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1006(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1006(arr, start, end);
+
+	// Sorting the left part
+	quickSort1006(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1006(arr, p + 1, end);
+}
+
+// 
+
+int partition1007(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1007(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1007(arr, start, end);
+
+	// Sorting the left part
+	quickSort1007(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1007(arr, p + 1, end);
+}
+
+// 
+
+int partition1008(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1008(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1008(arr, start, end);
+
+	// Sorting the left part
+	quickSort1008(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1008(arr, p + 1, end);
+}
+
+// 
+
+int partition1009(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1009(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1009(arr, start, end);
+
+	// Sorting the left part
+	quickSort1009(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1009(arr, p + 1, end);
+}
+
+// 
+
+int partition1010(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1010(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1010(arr, start, end);
+
+	// Sorting the left part
+	quickSort1010(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1010(arr, p + 1, end);
+}
+
+// 
+
+int partition1011(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1011(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1011(arr, start, end);
+
+	// Sorting the left part
+	quickSort1011(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1011(arr, p + 1, end);
+}
+
+// 
+
+int partition1012(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1012(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1012(arr, start, end);
+
+	// Sorting the left part
+	quickSort1012(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1012(arr, p + 1, end);
+}
+
+// 
+
+int partition1013(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1013(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1013(arr, start, end);
+
+	// Sorting the left part
+	quickSort1013(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1013(arr, p + 1, end);
+}
+
+// 
+
+int partition1014(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1014(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1014(arr, start, end);
+
+	// Sorting the left part
+	quickSort1014(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1014(arr, p + 1, end);
+}
+
+// 
+
+int partition1015(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1015(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1015(arr, start, end);
+
+	// Sorting the left part
+	quickSort1015(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1015(arr, p + 1, end);
+}
+
+// 
+
+int partition1016(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1016(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1016(arr, start, end);
+
+	// Sorting the left part
+	quickSort1016(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1016(arr, p + 1, end);
+}
+
+// 
+
+int partition1017(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1017(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1017(arr, start, end);
+
+	// Sorting the left part
+	quickSort1017(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1017(arr, p + 1, end);
+}
+
+// 
+
+int partition1018(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1018(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1018(arr, start, end);
+
+	// Sorting the left part
+	quickSort1018(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1018(arr, p + 1, end);
+}
+
+// 
+
+int partition1019(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1019(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1019(arr, start, end);
+
+	// Sorting the left part
+	quickSort1019(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1019(arr, p + 1, end);
+}
+
+// 
+
+int partition1020(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1020(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1020(arr, start, end);
+
+	// Sorting the left part
+	quickSort1020(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1020(arr, p + 1, end);
+}
+
+// 
+
+int partition1021(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1021(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1021(arr, start, end);
+
+	// Sorting the left part
+	quickSort1021(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1021(arr, p + 1, end);
+}
+
+// 
+
+int partition1022(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1022(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1022(arr, start, end);
+
+	// Sorting the left part
+	quickSort1022(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1022(arr, p + 1, end);
+}
+
+// 
+
+int partition1023(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1023(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1023(arr, start, end);
+
+	// Sorting the left part
+	quickSort1023(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1023(arr, p + 1, end);
+}
+
+// 
+
+int partition1024(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1024(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1024(arr, start, end);
+
+	// Sorting the left part
+	quickSort1024(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1024(arr, p + 1, end);
+}
+
+// 
+
+int partition1025(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1025(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1025(arr, start, end);
+
+	// Sorting the left part
+	quickSort1025(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1025(arr, p + 1, end);
+}
+
+// 
+
+int partition1026(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1026(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1026(arr, start, end);
+
+	// Sorting the left part
+	quickSort1026(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1026(arr, p + 1, end);
+}
+
+// 
+
+int partition1027(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1027(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1027(arr, start, end);
+
+	// Sorting the left part
+	quickSort1027(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1027(arr, p + 1, end);
+}
+
+// 
+
+int partition1028(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1028(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1028(arr, start, end);
+
+	// Sorting the left part
+	quickSort1028(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1028(arr, p + 1, end);
+}
+
+// 
+
+int partition1029(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1029(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1029(arr, start, end);
+
+	// Sorting the left part
+	quickSort1029(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1029(arr, p + 1, end);
+}
+
+// 
+
+int partition1030(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1030(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1030(arr, start, end);
+
+	// Sorting the left part
+	quickSort1030(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1030(arr, p + 1, end);
+}
+
+// 
+
+int partition1031(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1031(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1031(arr, start, end);
+
+	// Sorting the left part
+	quickSort1031(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1031(arr, p + 1, end);
+}
+
+// 
+
+int partition1032(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1032(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1032(arr, start, end);
+
+	// Sorting the left part
+	quickSort1032(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1032(arr, p + 1, end);
+}
+
+// 
+
+int partition1033(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1033(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1033(arr, start, end);
+
+	// Sorting the left part
+	quickSort1033(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1033(arr, p + 1, end);
+}
+
+// 
+
+int partition1034(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1034(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1034(arr, start, end);
+
+	// Sorting the left part
+	quickSort1034(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1034(arr, p + 1, end);
+}
+
+// 
+
+int partition1035(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1035(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1035(arr, start, end);
+
+	// Sorting the left part
+	quickSort1035(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1035(arr, p + 1, end);
+}
+
+// 
+
+int partition1036(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1036(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1036(arr, start, end);
+
+	// Sorting the left part
+	quickSort1036(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1036(arr, p + 1, end);
+}
+
+// 
+
+int partition1037(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1037(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1037(arr, start, end);
+
+	// Sorting the left part
+	quickSort1037(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1037(arr, p + 1, end);
+}
+
+// 
+
+int partition1038(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1038(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1038(arr, start, end);
+
+	// Sorting the left part
+	quickSort1038(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1038(arr, p + 1, end);
+}
+
+// 
+
+int partition1039(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1039(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1039(arr, start, end);
+
+	// Sorting the left part
+	quickSort1039(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1039(arr, p + 1, end);
+}
+
+// 
+
+int partition1040(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1040(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1040(arr, start, end);
+
+	// Sorting the left part
+	quickSort1040(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1040(arr, p + 1, end);
+}
+
+// 
+
+int partition1041(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1041(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1041(arr, start, end);
+
+	// Sorting the left part
+	quickSort1041(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1041(arr, p + 1, end);
+}
+
+// 
+
+int partition1042(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1042(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1042(arr, start, end);
+
+	// Sorting the left part
+	quickSort1042(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1042(arr, p + 1, end);
+}
+
+// 
+
+int partition1043(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1043(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1043(arr, start, end);
+
+	// Sorting the left part
+	quickSort1043(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1043(arr, p + 1, end);
+}
+
+// 
+
+int partition1044(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1044(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1044(arr, start, end);
+
+	// Sorting the left part
+	quickSort1044(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1044(arr, p + 1, end);
+}
+
+// 
+
+int partition1045(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1045(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1045(arr, start, end);
+
+	// Sorting the left part
+	quickSort1045(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1045(arr, p + 1, end);
+}
+
+// 
+
+int partition1046(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1046(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1046(arr, start, end);
+
+	// Sorting the left part
+	quickSort1046(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1046(arr, p + 1, end);
+}
+
+// 
+
+int partition1047(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1047(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1047(arr, start, end);
+
+	// Sorting the left part
+	quickSort1047(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1047(arr, p + 1, end);
+}
+
+// 
+
+int partition1048(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1048(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1048(arr, start, end);
+
+	// Sorting the left part
+	quickSort1048(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1048(arr, p + 1, end);
+}
+
+// 
+
+int partition1049(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1049(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1049(arr, start, end);
+
+	// Sorting the left part
+	quickSort1049(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1049(arr, p + 1, end);
+}
+
+// 
+
+int partition1050(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1050(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1050(arr, start, end);
+
+	// Sorting the left part
+	quickSort1050(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1050(arr, p + 1, end);
+}
+
+// 
+
+int partition1051(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1051(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1051(arr, start, end);
+
+	// Sorting the left part
+	quickSort1051(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1051(arr, p + 1, end);
+}
+
+// 
+
+int partition1052(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1052(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1052(arr, start, end);
+
+	// Sorting the left part
+	quickSort1052(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1052(arr, p + 1, end);
+}
+
+// 
+
+int partition1053(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1053(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1053(arr, start, end);
+
+	// Sorting the left part
+	quickSort1053(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1053(arr, p + 1, end);
+}
+
+// 
+
+int partition1054(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1054(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1054(arr, start, end);
+
+	// Sorting the left part
+	quickSort1054(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1054(arr, p + 1, end);
+}
+
+// 
+
+int partition1055(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1055(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1055(arr, start, end);
+
+	// Sorting the left part
+	quickSort1055(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1055(arr, p + 1, end);
+}
+
+// 
+
+int partition1056(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1056(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1056(arr, start, end);
+
+	// Sorting the left part
+	quickSort1056(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1056(arr, p + 1, end);
+}
+
+// 
+
+int partition1057(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1057(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1057(arr, start, end);
+
+	// Sorting the left part
+	quickSort1057(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1057(arr, p + 1, end);
+}
+
+// 
+
+int partition1058(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1058(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1058(arr, start, end);
+
+	// Sorting the left part
+	quickSort1058(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1058(arr, p + 1, end);
+}
+
+// 
+
+int partition1059(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1059(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1059(arr, start, end);
+
+	// Sorting the left part
+	quickSort1059(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1059(arr, p + 1, end);
+}
+
+// 
+
+int partition1060(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1060(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1060(arr, start, end);
+
+	// Sorting the left part
+	quickSort1060(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1060(arr, p + 1, end);
+}
+
+// 
+
+int partition1061(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1061(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1061(arr, start, end);
+
+	// Sorting the left part
+	quickSort1061(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1061(arr, p + 1, end);
+}
+
+// 
+
+int partition1062(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1062(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1062(arr, start, end);
+
+	// Sorting the left part
+	quickSort1062(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1062(arr, p + 1, end);
+}
+
+// 
+
+int partition1063(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1063(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1063(arr, start, end);
+
+	// Sorting the left part
+	quickSort1063(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1063(arr, p + 1, end);
+}
+
+// 
+
+int partition1064(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1064(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1064(arr, start, end);
+
+	// Sorting the left part
+	quickSort1064(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1064(arr, p + 1, end);
+}
+
+// 
+
+int partition1065(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1065(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1065(arr, start, end);
+
+	// Sorting the left part
+	quickSort1065(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1065(arr, p + 1, end);
+}
+
+// 
+
+int partition1066(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1066(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1066(arr, start, end);
+
+	// Sorting the left part
+	quickSort1066(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1066(arr, p + 1, end);
+}
+
+// 
+
+int partition1067(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1067(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1067(arr, start, end);
+
+	// Sorting the left part
+	quickSort1067(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1067(arr, p + 1, end);
+}
+
+// 
+
+int partition1068(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1068(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1068(arr, start, end);
+
+	// Sorting the left part
+	quickSort1068(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1068(arr, p + 1, end);
+}
+
+// 
+
+int partition1069(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1069(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1069(arr, start, end);
+
+	// Sorting the left part
+	quickSort1069(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1069(arr, p + 1, end);
+}
+
+// 
+
+int partition1070(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1070(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1070(arr, start, end);
+
+	// Sorting the left part
+	quickSort1070(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1070(arr, p + 1, end);
+}
+
+// 
+
+int partition1071(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1071(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1071(arr, start, end);
+
+	// Sorting the left part
+	quickSort1071(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1071(arr, p + 1, end);
+}
+
+// 
+
+int partition1072(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1072(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1072(arr, start, end);
+
+	// Sorting the left part
+	quickSort1072(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1072(arr, p + 1, end);
+}
+
+// 
+
+int partition1073(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1073(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1073(arr, start, end);
+
+	// Sorting the left part
+	quickSort1073(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1073(arr, p + 1, end);
+}
+
+// 
+
+int partition1074(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1074(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1074(arr, start, end);
+
+	// Sorting the left part
+	quickSort1074(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1074(arr, p + 1, end);
+}
+
+// 
+
+int partition1075(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1075(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1075(arr, start, end);
+
+	// Sorting the left part
+	quickSort1075(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1075(arr, p + 1, end);
+}
+
+// 
+
+int partition1076(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1076(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1076(arr, start, end);
+
+	// Sorting the left part
+	quickSort1076(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1076(arr, p + 1, end);
+}
+
+// 
+
+int partition1077(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1077(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1077(arr, start, end);
+
+	// Sorting the left part
+	quickSort1077(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1077(arr, p + 1, end);
+}
+
+// 
+
+int partition1078(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1078(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1078(arr, start, end);
+
+	// Sorting the left part
+	quickSort1078(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1078(arr, p + 1, end);
+}
+
+// 
+
+int partition1079(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1079(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1079(arr, start, end);
+
+	// Sorting the left part
+	quickSort1079(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1079(arr, p + 1, end);
+}
+
+// 
+
+int partition1080(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1080(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1080(arr, start, end);
+
+	// Sorting the left part
+	quickSort1080(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1080(arr, p + 1, end);
+}
+
+// 
+
+int partition1081(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1081(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1081(arr, start, end);
+
+	// Sorting the left part
+	quickSort1081(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1081(arr, p + 1, end);
+}
+
+// 
+
+int partition1082(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1082(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1082(arr, start, end);
+
+	// Sorting the left part
+	quickSort1082(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1082(arr, p + 1, end);
+}
+
+// 
+
+int partition1083(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1083(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1083(arr, start, end);
+
+	// Sorting the left part
+	quickSort1083(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1083(arr, p + 1, end);
+}
+
+// 
+
+int partition1084(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1084(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1084(arr, start, end);
+
+	// Sorting the left part
+	quickSort1084(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1084(arr, p + 1, end);
+}
+
+// 
+
+int partition1085(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1085(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1085(arr, start, end);
+
+	// Sorting the left part
+	quickSort1085(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1085(arr, p + 1, end);
+}
+
+// 
+
+int partition1086(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1086(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1086(arr, start, end);
+
+	// Sorting the left part
+	quickSort1086(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1086(arr, p + 1, end);
+}
+
+// 
+
+int partition1087(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1087(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1087(arr, start, end);
+
+	// Sorting the left part
+	quickSort1087(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1087(arr, p + 1, end);
+}
+
+// 
+
+int partition1088(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1088(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1088(arr, start, end);
+
+	// Sorting the left part
+	quickSort1088(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1088(arr, p + 1, end);
+}
+
+// 
+
+int partition1089(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1089(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1089(arr, start, end);
+
+	// Sorting the left part
+	quickSort1089(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1089(arr, p + 1, end);
+}
+
+// 
+
+int partition1090(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1090(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1090(arr, start, end);
+
+	// Sorting the left part
+	quickSort1090(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1090(arr, p + 1, end);
+}
+
+// 
+
+int partition1091(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1091(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1091(arr, start, end);
+
+	// Sorting the left part
+	quickSort1091(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1091(arr, p + 1, end);
+}
+
+// 
+
+int partition1092(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1092(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1092(arr, start, end);
+
+	// Sorting the left part
+	quickSort1092(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1092(arr, p + 1, end);
+}
+
+// 
+
+int partition1093(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1093(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1093(arr, start, end);
+
+	// Sorting the left part
+	quickSort1093(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1093(arr, p + 1, end);
+}
+
+// 
+
+int partition1094(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1094(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1094(arr, start, end);
+
+	// Sorting the left part
+	quickSort1094(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1094(arr, p + 1, end);
+}
+
+// 
+
+int partition1095(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1095(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1095(arr, start, end);
+
+	// Sorting the left part
+	quickSort1095(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1095(arr, p + 1, end);
+}
+
+// 
+
+int partition1096(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1096(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1096(arr, start, end);
+
+	// Sorting the left part
+	quickSort1096(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1096(arr, p + 1, end);
+}
+
+// 
+
+int partition1097(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1097(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1097(arr, start, end);
+
+	// Sorting the left part
+	quickSort1097(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1097(arr, p + 1, end);
+}
+
+// 
+
+int partition1098(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1098(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1098(arr, start, end);
+
+	// Sorting the left part
+	quickSort1098(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1098(arr, p + 1, end);
+}
+
+// 
+
+int partition1099(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1099(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1099(arr, start, end);
+
+	// Sorting the left part
+	quickSort1099(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1099(arr, p + 1, end);
+}
+
+// 
+
+int partition1100(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1100(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1100(arr, start, end);
+
+	// Sorting the left part
+	quickSort1100(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1100(arr, p + 1, end);
+}
+
+// 
+
+int partition1101(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1101(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1101(arr, start, end);
+
+	// Sorting the left part
+	quickSort1101(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1101(arr, p + 1, end);
+}
+
+// 
+
+int partition1102(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1102(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1102(arr, start, end);
+
+	// Sorting the left part
+	quickSort1102(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1102(arr, p + 1, end);
+}
+
+// 
+
+int partition1103(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1103(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1103(arr, start, end);
+
+	// Sorting the left part
+	quickSort1103(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1103(arr, p + 1, end);
+}
+
+// 
+
+int partition1104(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1104(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1104(arr, start, end);
+
+	// Sorting the left part
+	quickSort1104(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1104(arr, p + 1, end);
+}
+
+// 
+
+int partition1105(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1105(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1105(arr, start, end);
+
+	// Sorting the left part
+	quickSort1105(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1105(arr, p + 1, end);
+}
+
+// 
+
+int partition1106(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1106(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1106(arr, start, end);
+
+	// Sorting the left part
+	quickSort1106(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1106(arr, p + 1, end);
+}
+
+// 
+
+int partition1107(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1107(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1107(arr, start, end);
+
+	// Sorting the left part
+	quickSort1107(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1107(arr, p + 1, end);
+}
+
+// 
+
+int partition1108(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1108(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1108(arr, start, end);
+
+	// Sorting the left part
+	quickSort1108(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1108(arr, p + 1, end);
+}
+
+// 
+
+int partition1109(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1109(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1109(arr, start, end);
+
+	// Sorting the left part
+	quickSort1109(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1109(arr, p + 1, end);
+}
+
+// 
+
+int partition1110(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1110(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1110(arr, start, end);
+
+	// Sorting the left part
+	quickSort1110(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1110(arr, p + 1, end);
+}
+
+// 
+
+int partition1111(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1111(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1111(arr, start, end);
+
+	// Sorting the left part
+	quickSort1111(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1111(arr, p + 1, end);
+}
+
+// 
+
+int partition1112(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1112(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1112(arr, start, end);
+
+	// Sorting the left part
+	quickSort1112(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1112(arr, p + 1, end);
+}
+
+// 
+
+int partition1113(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1113(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1113(arr, start, end);
+
+	// Sorting the left part
+	quickSort1113(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1113(arr, p + 1, end);
+}
+
+// 
+
+int partition1114(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1114(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1114(arr, start, end);
+
+	// Sorting the left part
+	quickSort1114(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1114(arr, p + 1, end);
+}
+
+// 
+
+int partition1115(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1115(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1115(arr, start, end);
+
+	// Sorting the left part
+	quickSort1115(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1115(arr, p + 1, end);
+}
+
+// 
+
+int partition1116(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1116(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1116(arr, start, end);
+
+	// Sorting the left part
+	quickSort1116(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1116(arr, p + 1, end);
+}
+
+// 
+
+int partition1117(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1117(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1117(arr, start, end);
+
+	// Sorting the left part
+	quickSort1117(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1117(arr, p + 1, end);
+}
+
+// 
+
+int partition1118(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1118(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1118(arr, start, end);
+
+	// Sorting the left part
+	quickSort1118(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1118(arr, p + 1, end);
+}
+
+// 
+
+int partition1119(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1119(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1119(arr, start, end);
+
+	// Sorting the left part
+	quickSort1119(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1119(arr, p + 1, end);
+}
+
+// 
+
+int partition1120(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1120(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1120(arr, start, end);
+
+	// Sorting the left part
+	quickSort1120(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1120(arr, p + 1, end);
+}
+
+// 
+
+int partition1121(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1121(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1121(arr, start, end);
+
+	// Sorting the left part
+	quickSort1121(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1121(arr, p + 1, end);
+}
+
+// 
+
+int partition1122(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1122(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1122(arr, start, end);
+
+	// Sorting the left part
+	quickSort1122(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1122(arr, p + 1, end);
+}
+
+// 
+
+int partition1123(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1123(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1123(arr, start, end);
+
+	// Sorting the left part
+	quickSort1123(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1123(arr, p + 1, end);
+}
+
+// 
+
+int partition1124(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1124(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1124(arr, start, end);
+
+	// Sorting the left part
+	quickSort1124(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1124(arr, p + 1, end);
+}
+
+// 
+
+int partition1125(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1125(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1125(arr, start, end);
+
+	// Sorting the left part
+	quickSort1125(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1125(arr, p + 1, end);
+}
+
+// 
+
+int partition1126(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1126(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1126(arr, start, end);
+
+	// Sorting the left part
+	quickSort1126(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1126(arr, p + 1, end);
+}
+
+// 
+
+int partition1127(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1127(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1127(arr, start, end);
+
+	// Sorting the left part
+	quickSort1127(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1127(arr, p + 1, end);
+}
+
+// 
+
+int partition1128(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1128(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1128(arr, start, end);
+
+	// Sorting the left part
+	quickSort1128(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1128(arr, p + 1, end);
+}
+
+// 
+
+int partition1129(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1129(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1129(arr, start, end);
+
+	// Sorting the left part
+	quickSort1129(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1129(arr, p + 1, end);
+}
+
+// 
+
+int partition1130(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1130(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1130(arr, start, end);
+
+	// Sorting the left part
+	quickSort1130(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1130(arr, p + 1, end);
+}
+
+// 
+
+int partition1131(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1131(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1131(arr, start, end);
+
+	// Sorting the left part
+	quickSort1131(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1131(arr, p + 1, end);
+}
+
+// 
+
+int partition1132(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1132(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1132(arr, start, end);
+
+	// Sorting the left part
+	quickSort1132(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1132(arr, p + 1, end);
+}
+
+// 
+
+int partition1133(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1133(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1133(arr, start, end);
+
+	// Sorting the left part
+	quickSort1133(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1133(arr, p + 1, end);
+}
+
+// 
+
+int partition1134(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1134(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1134(arr, start, end);
+
+	// Sorting the left part
+	quickSort1134(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1134(arr, p + 1, end);
+}
+
+// 
+
+int partition1135(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1135(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1135(arr, start, end);
+
+	// Sorting the left part
+	quickSort1135(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1135(arr, p + 1, end);
+}
+
+// 
+
+int partition1136(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1136(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1136(arr, start, end);
+
+	// Sorting the left part
+	quickSort1136(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1136(arr, p + 1, end);
+}
+
+// 
+
+int partition1137(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1137(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1137(arr, start, end);
+
+	// Sorting the left part
+	quickSort1137(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1137(arr, p + 1, end);
+}
+
+// 
+
+int partition1138(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1138(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1138(arr, start, end);
+
+	// Sorting the left part
+	quickSort1138(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1138(arr, p + 1, end);
+}
+
+// 
+
+int partition1139(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1139(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1139(arr, start, end);
+
+	// Sorting the left part
+	quickSort1139(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1139(arr, p + 1, end);
+}
+
+// 
+
+int partition1140(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1140(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1140(arr, start, end);
+
+	// Sorting the left part
+	quickSort1140(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1140(arr, p + 1, end);
+}
+
+// 
+
+int partition1141(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1141(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1141(arr, start, end);
+
+	// Sorting the left part
+	quickSort1141(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1141(arr, p + 1, end);
+}
+
+// 
+
+int partition1142(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1142(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1142(arr, start, end);
+
+	// Sorting the left part
+	quickSort1142(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1142(arr, p + 1, end);
+}
+
+// 
+
+int partition1143(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1143(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1143(arr, start, end);
+
+	// Sorting the left part
+	quickSort1143(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1143(arr, p + 1, end);
+}
+
+// 
+
+int partition1144(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1144(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1144(arr, start, end);
+
+	// Sorting the left part
+	quickSort1144(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1144(arr, p + 1, end);
+}
+
+// 
+
+int partition1145(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1145(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1145(arr, start, end);
+
+	// Sorting the left part
+	quickSort1145(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1145(arr, p + 1, end);
+}
+
+// 
+
+int partition1146(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1146(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1146(arr, start, end);
+
+	// Sorting the left part
+	quickSort1146(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1146(arr, p + 1, end);
+}
+
+// 
+
+int partition1147(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1147(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1147(arr, start, end);
+
+	// Sorting the left part
+	quickSort1147(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1147(arr, p + 1, end);
+}
+
+// 
+
+int partition1148(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1148(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1148(arr, start, end);
+
+	// Sorting the left part
+	quickSort1148(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1148(arr, p + 1, end);
+}
+
+// 
+
+int partition1149(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1149(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1149(arr, start, end);
+
+	// Sorting the left part
+	quickSort1149(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1149(arr, p + 1, end);
+}
+
+// 
+
+int partition1150(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1150(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1150(arr, start, end);
+
+	// Sorting the left part
+	quickSort1150(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1150(arr, p + 1, end);
+}
+
+// 
+
+int partition1151(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1151(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1151(arr, start, end);
+
+	// Sorting the left part
+	quickSort1151(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1151(arr, p + 1, end);
+}
+
+// 
+
+int partition1152(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1152(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1152(arr, start, end);
+
+	// Sorting the left part
+	quickSort1152(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1152(arr, p + 1, end);
+}
+
+// 
+
+int partition1153(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1153(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1153(arr, start, end);
+
+	// Sorting the left part
+	quickSort1153(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1153(arr, p + 1, end);
+}
+
+// 
+
+int partition1154(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1154(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1154(arr, start, end);
+
+	// Sorting the left part
+	quickSort1154(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1154(arr, p + 1, end);
+}
+
+// 
+
+int partition1155(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1155(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1155(arr, start, end);
+
+	// Sorting the left part
+	quickSort1155(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1155(arr, p + 1, end);
+}
+
+// 
+
+int partition1156(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1156(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1156(arr, start, end);
+
+	// Sorting the left part
+	quickSort1156(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1156(arr, p + 1, end);
+}
+
+// 
+
+int partition1157(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1157(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1157(arr, start, end);
+
+	// Sorting the left part
+	quickSort1157(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1157(arr, p + 1, end);
+}
+
+// 
+
+int partition1158(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1158(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1158(arr, start, end);
+
+	// Sorting the left part
+	quickSort1158(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1158(arr, p + 1, end);
+}
+
+// 
+
+int partition1159(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1159(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1159(arr, start, end);
+
+	// Sorting the left part
+	quickSort1159(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1159(arr, p + 1, end);
+}
+
+// 
+
+int partition1160(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1160(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1160(arr, start, end);
+
+	// Sorting the left part
+	quickSort1160(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1160(arr, p + 1, end);
+}
+
+// 
+
+int partition1161(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1161(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1161(arr, start, end);
+
+	// Sorting the left part
+	quickSort1161(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1161(arr, p + 1, end);
+}
+
+// 
+
+int partition1162(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1162(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1162(arr, start, end);
+
+	// Sorting the left part
+	quickSort1162(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1162(arr, p + 1, end);
+}
+
+// 
+
+int partition1163(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1163(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1163(arr, start, end);
+
+	// Sorting the left part
+	quickSort1163(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1163(arr, p + 1, end);
+}
+
+// 
+
+int partition1164(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1164(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1164(arr, start, end);
+
+	// Sorting the left part
+	quickSort1164(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1164(arr, p + 1, end);
+}
+
+// 
+
+int partition1165(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1165(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1165(arr, start, end);
+
+	// Sorting the left part
+	quickSort1165(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1165(arr, p + 1, end);
+}
+
+// 
+
+int partition1166(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1166(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1166(arr, start, end);
+
+	// Sorting the left part
+	quickSort1166(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1166(arr, p + 1, end);
+}
+
+// 
+
+int partition1167(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1167(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1167(arr, start, end);
+
+	// Sorting the left part
+	quickSort1167(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1167(arr, p + 1, end);
+}
+
+// 
+
+int partition1168(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1168(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1168(arr, start, end);
+
+	// Sorting the left part
+	quickSort1168(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1168(arr, p + 1, end);
+}
+
+// 
+
+int partition1169(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1169(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1169(arr, start, end);
+
+	// Sorting the left part
+	quickSort1169(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1169(arr, p + 1, end);
+}
+
+// 
+
+int partition1170(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1170(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1170(arr, start, end);
+
+	// Sorting the left part
+	quickSort1170(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1170(arr, p + 1, end);
+}
+
+// 
+
+int partition1171(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1171(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1171(arr, start, end);
+
+	// Sorting the left part
+	quickSort1171(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1171(arr, p + 1, end);
+}
+
+// 
+
+int partition1172(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1172(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1172(arr, start, end);
+
+	// Sorting the left part
+	quickSort1172(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1172(arr, p + 1, end);
+}
+
+// 
+
+int partition1173(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1173(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1173(arr, start, end);
+
+	// Sorting the left part
+	quickSort1173(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1173(arr, p + 1, end);
+}
+
+// 
+
+int partition1174(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1174(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1174(arr, start, end);
+
+	// Sorting the left part
+	quickSort1174(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1174(arr, p + 1, end);
+}
+
+// 
+
+int partition1175(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1175(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1175(arr, start, end);
+
+	// Sorting the left part
+	quickSort1175(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1175(arr, p + 1, end);
+}
+
+// 
+
+int partition1176(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1176(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1176(arr, start, end);
+
+	// Sorting the left part
+	quickSort1176(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1176(arr, p + 1, end);
+}
+
+// 
+
+int partition1177(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1177(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1177(arr, start, end);
+
+	// Sorting the left part
+	quickSort1177(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1177(arr, p + 1, end);
+}
+
+// 
+
+int partition1178(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1178(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1178(arr, start, end);
+
+	// Sorting the left part
+	quickSort1178(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1178(arr, p + 1, end);
+}
+
+// 
+
+int partition1179(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1179(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1179(arr, start, end);
+
+	// Sorting the left part
+	quickSort1179(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1179(arr, p + 1, end);
+}
+
+// 
+
+int partition1180(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1180(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1180(arr, start, end);
+
+	// Sorting the left part
+	quickSort1180(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1180(arr, p + 1, end);
+}
+
+// 
+
+int partition1181(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1181(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1181(arr, start, end);
+
+	// Sorting the left part
+	quickSort1181(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1181(arr, p + 1, end);
+}
+
+// 
+
+int partition1182(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1182(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1182(arr, start, end);
+
+	// Sorting the left part
+	quickSort1182(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1182(arr, p + 1, end);
+}
+
+// 
+
+int partition1183(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1183(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1183(arr, start, end);
+
+	// Sorting the left part
+	quickSort1183(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1183(arr, p + 1, end);
+}
+
+// 
+
+int partition1184(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1184(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1184(arr, start, end);
+
+	// Sorting the left part
+	quickSort1184(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1184(arr, p + 1, end);
+}
+
+// 
+
+int partition1185(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1185(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1185(arr, start, end);
+
+	// Sorting the left part
+	quickSort1185(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1185(arr, p + 1, end);
+}
+
+// 
+
+int partition1186(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1186(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1186(arr, start, end);
+
+	// Sorting the left part
+	quickSort1186(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1186(arr, p + 1, end);
+}
+
+// 
+
+int partition1187(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1187(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1187(arr, start, end);
+
+	// Sorting the left part
+	quickSort1187(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1187(arr, p + 1, end);
+}
+
+// 
+
+int partition1188(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1188(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1188(arr, start, end);
+
+	// Sorting the left part
+	quickSort1188(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1188(arr, p + 1, end);
+}
+
+// 
+
+int partition1189(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1189(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1189(arr, start, end);
+
+	// Sorting the left part
+	quickSort1189(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1189(arr, p + 1, end);
+}
+
+// 
+
+int partition1190(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1190(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1190(arr, start, end);
+
+	// Sorting the left part
+	quickSort1190(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1190(arr, p + 1, end);
+}
+
+// 
+
+int partition1191(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1191(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1191(arr, start, end);
+
+	// Sorting the left part
+	quickSort1191(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1191(arr, p + 1, end);
+}
+
+// 
+
+int partition1192(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1192(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1192(arr, start, end);
+
+	// Sorting the left part
+	quickSort1192(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1192(arr, p + 1, end);
+}
+
+// 
+
+int partition1193(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1193(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1193(arr, start, end);
+
+	// Sorting the left part
+	quickSort1193(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1193(arr, p + 1, end);
+}
+
+// 
+
+int partition1194(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1194(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1194(arr, start, end);
+
+	// Sorting the left part
+	quickSort1194(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1194(arr, p + 1, end);
+}
+
+// 
+
+int partition1195(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1195(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1195(arr, start, end);
+
+	// Sorting the left part
+	quickSort1195(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1195(arr, p + 1, end);
+}
+
+// 
+
+int partition1196(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1196(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1196(arr, start, end);
+
+	// Sorting the left part
+	quickSort1196(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1196(arr, p + 1, end);
+}
+
+// 
+
+int partition1197(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1197(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1197(arr, start, end);
+
+	// Sorting the left part
+	quickSort1197(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1197(arr, p + 1, end);
+}
+
+// 
+
+int partition1198(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1198(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1198(arr, start, end);
+
+	// Sorting the left part
+	quickSort1198(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1198(arr, p + 1, end);
+}
+
+// 
+
+int partition1199(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1199(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1199(arr, start, end);
+
+	// Sorting the left part
+	quickSort1199(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1199(arr, p + 1, end);
+}
+
+// 
+
+int partition1200(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1200(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1200(arr, start, end);
+
+	// Sorting the left part
+	quickSort1200(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1200(arr, p + 1, end);
+}
+
+// 
+
+int partition1201(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1201(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1201(arr, start, end);
+
+	// Sorting the left part
+	quickSort1201(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1201(arr, p + 1, end);
+}
+
+// 
+
+int partition1202(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1202(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1202(arr, start, end);
+
+	// Sorting the left part
+	quickSort1202(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1202(arr, p + 1, end);
+}
+
+// 
+
+int partition1203(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1203(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1203(arr, start, end);
+
+	// Sorting the left part
+	quickSort1203(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1203(arr, p + 1, end);
+}
+
+// 
+
+int partition1204(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1204(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1204(arr, start, end);
+
+	// Sorting the left part
+	quickSort1204(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1204(arr, p + 1, end);
+}
+
+// 
+
+int partition1205(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1205(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1205(arr, start, end);
+
+	// Sorting the left part
+	quickSort1205(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1205(arr, p + 1, end);
+}
+
+// 
+
+int partition1206(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1206(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1206(arr, start, end);
+
+	// Sorting the left part
+	quickSort1206(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1206(arr, p + 1, end);
+}
+
+// 
+
+int partition1207(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1207(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1207(arr, start, end);
+
+	// Sorting the left part
+	quickSort1207(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1207(arr, p + 1, end);
+}
+
+// 
+
+int partition1208(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1208(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1208(arr, start, end);
+
+	// Sorting the left part
+	quickSort1208(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1208(arr, p + 1, end);
+}
+
+// 
+
+int partition1209(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1209(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1209(arr, start, end);
+
+	// Sorting the left part
+	quickSort1209(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1209(arr, p + 1, end);
+}
+
+// 
+
+int partition1210(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1210(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1210(arr, start, end);
+
+	// Sorting the left part
+	quickSort1210(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1210(arr, p + 1, end);
+}
+
+// 
+
+int partition1211(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1211(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1211(arr, start, end);
+
+	// Sorting the left part
+	quickSort1211(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1211(arr, p + 1, end);
+}
+
+// 
+
+int partition1212(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1212(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1212(arr, start, end);
+
+	// Sorting the left part
+	quickSort1212(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1212(arr, p + 1, end);
+}
+
+// 
+
+int partition1213(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1213(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1213(arr, start, end);
+
+	// Sorting the left part
+	quickSort1213(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1213(arr, p + 1, end);
+}
+
+// 
+
+int partition1214(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1214(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1214(arr, start, end);
+
+	// Sorting the left part
+	quickSort1214(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1214(arr, p + 1, end);
+}
+
+// 
+
+int partition1215(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1215(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1215(arr, start, end);
+
+	// Sorting the left part
+	quickSort1215(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1215(arr, p + 1, end);
+}
+
+// 
+
+int partition1216(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1216(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1216(arr, start, end);
+
+	// Sorting the left part
+	quickSort1216(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1216(arr, p + 1, end);
+}
+
+// 
+
+int partition1217(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1217(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1217(arr, start, end);
+
+	// Sorting the left part
+	quickSort1217(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1217(arr, p + 1, end);
+}
+
+// 
+
+int partition1218(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1218(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1218(arr, start, end);
+
+	// Sorting the left part
+	quickSort1218(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1218(arr, p + 1, end);
+}
+
+// 
+
+int partition1219(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1219(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1219(arr, start, end);
+
+	// Sorting the left part
+	quickSort1219(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1219(arr, p + 1, end);
+}
+
+// 
+
+int partition1220(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1220(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1220(arr, start, end);
+
+	// Sorting the left part
+	quickSort1220(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1220(arr, p + 1, end);
+}
+
+// 
+
+int partition1221(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1221(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1221(arr, start, end);
+
+	// Sorting the left part
+	quickSort1221(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1221(arr, p + 1, end);
+}
+
+// 
+
+int partition1222(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1222(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1222(arr, start, end);
+
+	// Sorting the left part
+	quickSort1222(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1222(arr, p + 1, end);
+}
+
+// 
+
+int partition1223(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1223(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1223(arr, start, end);
+
+	// Sorting the left part
+	quickSort1223(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1223(arr, p + 1, end);
+}
+
+// 
+
+int partition1224(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1224(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1224(arr, start, end);
+
+	// Sorting the left part
+	quickSort1224(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1224(arr, p + 1, end);
+}
+
+// 
+
+int partition1225(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1225(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1225(arr, start, end);
+
+	// Sorting the left part
+	quickSort1225(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1225(arr, p + 1, end);
+}
+
+// 
+
+int partition1226(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1226(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1226(arr, start, end);
+
+	// Sorting the left part
+	quickSort1226(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1226(arr, p + 1, end);
+}
+
+// 
+
+int partition1227(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1227(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1227(arr, start, end);
+
+	// Sorting the left part
+	quickSort1227(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1227(arr, p + 1, end);
+}
+
+// 
+
+int partition1228(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1228(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1228(arr, start, end);
+
+	// Sorting the left part
+	quickSort1228(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1228(arr, p + 1, end);
+}
+
+// 
+
+int partition1229(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1229(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1229(arr, start, end);
+
+	// Sorting the left part
+	quickSort1229(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1229(arr, p + 1, end);
+}
+
+// 
+
+int partition1230(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1230(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1230(arr, start, end);
+
+	// Sorting the left part
+	quickSort1230(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1230(arr, p + 1, end);
+}
+
+// 
+
+int partition1231(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1231(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1231(arr, start, end);
+
+	// Sorting the left part
+	quickSort1231(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1231(arr, p + 1, end);
+}
+
+// 
+
+int partition1232(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1232(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1232(arr, start, end);
+
+	// Sorting the left part
+	quickSort1232(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1232(arr, p + 1, end);
+}
+
+// 
+
+int partition1233(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1233(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1233(arr, start, end);
+
+	// Sorting the left part
+	quickSort1233(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1233(arr, p + 1, end);
+}
+
+// 
+
+int partition1234(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1234(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1234(arr, start, end);
+
+	// Sorting the left part
+	quickSort1234(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1234(arr, p + 1, end);
+}
+
+// 
+
+int partition1235(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1235(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1235(arr, start, end);
+
+	// Sorting the left part
+	quickSort1235(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1235(arr, p + 1, end);
+}
+
+// 
+
+int partition1236(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1236(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1236(arr, start, end);
+
+	// Sorting the left part
+	quickSort1236(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1236(arr, p + 1, end);
+}
+
+// 
+
+int partition1237(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1237(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1237(arr, start, end);
+
+	// Sorting the left part
+	quickSort1237(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1237(arr, p + 1, end);
+}
+
+// 
+
+int partition1238(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1238(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1238(arr, start, end);
+
+	// Sorting the left part
+	quickSort1238(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1238(arr, p + 1, end);
+}
+
+// 
+
+int partition1239(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1239(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1239(arr, start, end);
+
+	// Sorting the left part
+	quickSort1239(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1239(arr, p + 1, end);
+}
+
+// 
+
+int partition1240(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1240(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1240(arr, start, end);
+
+	// Sorting the left part
+	quickSort1240(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1240(arr, p + 1, end);
+}
+
+// 
+
+int partition1241(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1241(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1241(arr, start, end);
+
+	// Sorting the left part
+	quickSort1241(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1241(arr, p + 1, end);
+}
+
+// 
+
+int partition1242(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1242(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1242(arr, start, end);
+
+	// Sorting the left part
+	quickSort1242(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1242(arr, p + 1, end);
+}
+
+// 
+
+int partition1243(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1243(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1243(arr, start, end);
+
+	// Sorting the left part
+	quickSort1243(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1243(arr, p + 1, end);
+}
+
+// 
+
+int partition1244(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1244(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1244(arr, start, end);
+
+	// Sorting the left part
+	quickSort1244(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1244(arr, p + 1, end);
+}
+
+// 
+
+int partition1245(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1245(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1245(arr, start, end);
+
+	// Sorting the left part
+	quickSort1245(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1245(arr, p + 1, end);
+}
+
+// 
+
+int partition1246(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1246(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1246(arr, start, end);
+
+	// Sorting the left part
+	quickSort1246(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1246(arr, p + 1, end);
+}
+
+// 
+
+int partition1247(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1247(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1247(arr, start, end);
+
+	// Sorting the left part
+	quickSort1247(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1247(arr, p + 1, end);
+}
+
+// 
+
+int partition1248(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1248(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1248(arr, start, end);
+
+	// Sorting the left part
+	quickSort1248(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1248(arr, p + 1, end);
+}
+
+// 
+
+int partition1249(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1249(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1249(arr, start, end);
+
+	// Sorting the left part
+	quickSort1249(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1249(arr, p + 1, end);
+}
+
+// 
+
+int partition1250(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1250(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1250(arr, start, end);
+
+	// Sorting the left part
+	quickSort1250(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1250(arr, p + 1, end);
+}
+
+// 
+
+int partition1251(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1251(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1251(arr, start, end);
+
+	// Sorting the left part
+	quickSort1251(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1251(arr, p + 1, end);
+}
+
+// 
+
+int partition1252(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1252(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1252(arr, start, end);
+
+	// Sorting the left part
+	quickSort1252(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1252(arr, p + 1, end);
+}
+
+// 
+
+int partition1253(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1253(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1253(arr, start, end);
+
+	// Sorting the left part
+	quickSort1253(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1253(arr, p + 1, end);
+}
+
+// 
+
+int partition1254(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1254(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1254(arr, start, end);
+
+	// Sorting the left part
+	quickSort1254(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1254(arr, p + 1, end);
+}
+
+// 
+
+int partition1255(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1255(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1255(arr, start, end);
+
+	// Sorting the left part
+	quickSort1255(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1255(arr, p + 1, end);
+}
+
+// 
+
+int partition1256(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1256(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1256(arr, start, end);
+
+	// Sorting the left part
+	quickSort1256(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1256(arr, p + 1, end);
+}
+
+// 
+
+int partition1257(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1257(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1257(arr, start, end);
+
+	// Sorting the left part
+	quickSort1257(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1257(arr, p + 1, end);
+}
+
+// 
+
+int partition1258(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1258(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1258(arr, start, end);
+
+	// Sorting the left part
+	quickSort1258(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1258(arr, p + 1, end);
+}
+
+// 
+
+int partition1259(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1259(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1259(arr, start, end);
+
+	// Sorting the left part
+	quickSort1259(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1259(arr, p + 1, end);
+}
+
+// 
+
+int partition1260(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1260(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1260(arr, start, end);
+
+	// Sorting the left part
+	quickSort1260(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1260(arr, p + 1, end);
+}
+
+// 
+
+int partition1261(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1261(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1261(arr, start, end);
+
+	// Sorting the left part
+	quickSort1261(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1261(arr, p + 1, end);
+}
+
+// 
+
+int partition1262(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1262(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1262(arr, start, end);
+
+	// Sorting the left part
+	quickSort1262(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1262(arr, p + 1, end);
+}
+
+// 
+
+int partition1263(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1263(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1263(arr, start, end);
+
+	// Sorting the left part
+	quickSort1263(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1263(arr, p + 1, end);
+}
+
+// 
+
+int partition1264(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1264(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1264(arr, start, end);
+
+	// Sorting the left part
+	quickSort1264(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1264(arr, p + 1, end);
+}
+
+// 
+
+int partition1265(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1265(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1265(arr, start, end);
+
+	// Sorting the left part
+	quickSort1265(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1265(arr, p + 1, end);
+}
+
+// 
+
+int partition1266(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1266(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1266(arr, start, end);
+
+	// Sorting the left part
+	quickSort1266(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1266(arr, p + 1, end);
+}
+
+// 
+
+int partition1267(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1267(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1267(arr, start, end);
+
+	// Sorting the left part
+	quickSort1267(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1267(arr, p + 1, end);
+}
+
+// 
+
+int partition1268(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1268(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1268(arr, start, end);
+
+	// Sorting the left part
+	quickSort1268(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1268(arr, p + 1, end);
+}
+
+// 
+
+int partition1269(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1269(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1269(arr, start, end);
+
+	// Sorting the left part
+	quickSort1269(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1269(arr, p + 1, end);
+}
+
+// 
+
+int partition1270(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1270(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1270(arr, start, end);
+
+	// Sorting the left part
+	quickSort1270(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1270(arr, p + 1, end);
+}
+
+// 
+
+int partition1271(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1271(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1271(arr, start, end);
+
+	// Sorting the left part
+	quickSort1271(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1271(arr, p + 1, end);
+}
+
+// 
+
+int partition1272(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1272(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1272(arr, start, end);
+
+	// Sorting the left part
+	quickSort1272(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1272(arr, p + 1, end);
+}
+
+// 
+
+int partition1273(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1273(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1273(arr, start, end);
+
+	// Sorting the left part
+	quickSort1273(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1273(arr, p + 1, end);
+}
+
+// 
+
+int partition1274(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1274(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1274(arr, start, end);
+
+	// Sorting the left part
+	quickSort1274(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1274(arr, p + 1, end);
+}
+
+// 
+
+int partition1275(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1275(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1275(arr, start, end);
+
+	// Sorting the left part
+	quickSort1275(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1275(arr, p + 1, end);
+}
+
+// 
+
+int partition1276(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1276(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1276(arr, start, end);
+
+	// Sorting the left part
+	quickSort1276(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1276(arr, p + 1, end);
+}
+
+// 
+
+int partition1277(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1277(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1277(arr, start, end);
+
+	// Sorting the left part
+	quickSort1277(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1277(arr, p + 1, end);
+}
+
+// 
+
+int partition1278(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1278(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1278(arr, start, end);
+
+	// Sorting the left part
+	quickSort1278(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1278(arr, p + 1, end);
+}
+
+// 
+
+int partition1279(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1279(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1279(arr, start, end);
+
+	// Sorting the left part
+	quickSort1279(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1279(arr, p + 1, end);
+}
+
+// 
+
+int partition1280(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1280(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1280(arr, start, end);
+
+	// Sorting the left part
+	quickSort1280(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1280(arr, p + 1, end);
+}
+
+// 
+
+int partition1281(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1281(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1281(arr, start, end);
+
+	// Sorting the left part
+	quickSort1281(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1281(arr, p + 1, end);
+}
+
+// 
+
+int partition1282(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1282(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1282(arr, start, end);
+
+	// Sorting the left part
+	quickSort1282(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1282(arr, p + 1, end);
+}
+
+// 
+
+int partition1283(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1283(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1283(arr, start, end);
+
+	// Sorting the left part
+	quickSort1283(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1283(arr, p + 1, end);
+}
+
+// 
+
+int partition1284(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1284(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1284(arr, start, end);
+
+	// Sorting the left part
+	quickSort1284(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1284(arr, p + 1, end);
+}
+
+// 
+
+int partition1285(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1285(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1285(arr, start, end);
+
+	// Sorting the left part
+	quickSort1285(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1285(arr, p + 1, end);
+}
+
+// 
+
+int partition1286(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1286(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1286(arr, start, end);
+
+	// Sorting the left part
+	quickSort1286(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1286(arr, p + 1, end);
+}
+
+// 
+
+int partition1287(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1287(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1287(arr, start, end);
+
+	// Sorting the left part
+	quickSort1287(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1287(arr, p + 1, end);
+}
+
+// 
+
+int partition1288(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1288(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1288(arr, start, end);
+
+	// Sorting the left part
+	quickSort1288(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1288(arr, p + 1, end);
+}
+
+// 
+
+int partition1289(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1289(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1289(arr, start, end);
+
+	// Sorting the left part
+	quickSort1289(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1289(arr, p + 1, end);
+}
+
+// 
+
+int partition1290(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1290(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1290(arr, start, end);
+
+	// Sorting the left part
+	quickSort1290(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1290(arr, p + 1, end);
+}
+
+// 
+
+int partition1291(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1291(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1291(arr, start, end);
+
+	// Sorting the left part
+	quickSort1291(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1291(arr, p + 1, end);
+}
+
+// 
+
+int partition1292(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1292(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1292(arr, start, end);
+
+	// Sorting the left part
+	quickSort1292(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1292(arr, p + 1, end);
+}
+
+// 
+
+int partition1293(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1293(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1293(arr, start, end);
+
+	// Sorting the left part
+	quickSort1293(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1293(arr, p + 1, end);
+}
+
+// 
+
+int partition1294(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1294(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1294(arr, start, end);
+
+	// Sorting the left part
+	quickSort1294(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1294(arr, p + 1, end);
+}
+
+// 
+
+int partition1295(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1295(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1295(arr, start, end);
+
+	// Sorting the left part
+	quickSort1295(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1295(arr, p + 1, end);
+}
+
+// 
+
+int partition1296(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1296(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1296(arr, start, end);
+
+	// Sorting the left part
+	quickSort1296(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1296(arr, p + 1, end);
+}
+
+// 
+
+int partition1297(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1297(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1297(arr, start, end);
+
+	// Sorting the left part
+	quickSort1297(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1297(arr, p + 1, end);
+}
+
+// 
+
+int partition1298(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1298(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1298(arr, start, end);
+
+	// Sorting the left part
+	quickSort1298(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1298(arr, p + 1, end);
+}
+
+// 
+
+int partition1299(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1299(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1299(arr, start, end);
+
+	// Sorting the left part
+	quickSort1299(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1299(arr, p + 1, end);
+}
+
+// 
+
+int partition1300(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1300(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1300(arr, start, end);
+
+	// Sorting the left part
+	quickSort1300(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1300(arr, p + 1, end);
+}
+
+// 
+
+int partition1301(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1301(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1301(arr, start, end);
+
+	// Sorting the left part
+	quickSort1301(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1301(arr, p + 1, end);
+}
+
+// 
+
+int partition1302(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1302(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1302(arr, start, end);
+
+	// Sorting the left part
+	quickSort1302(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1302(arr, p + 1, end);
+}
+
+// 
+
+int partition1303(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1303(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1303(arr, start, end);
+
+	// Sorting the left part
+	quickSort1303(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1303(arr, p + 1, end);
+}
+
+// 
+
+int partition1304(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1304(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1304(arr, start, end);
+
+	// Sorting the left part
+	quickSort1304(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1304(arr, p + 1, end);
+}
+
+// 
+
+int partition1305(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1305(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1305(arr, start, end);
+
+	// Sorting the left part
+	quickSort1305(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1305(arr, p + 1, end);
+}
+
+// 
+
+int partition1306(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1306(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1306(arr, start, end);
+
+	// Sorting the left part
+	quickSort1306(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1306(arr, p + 1, end);
+}
+
+// 
+
+int partition1307(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1307(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1307(arr, start, end);
+
+	// Sorting the left part
+	quickSort1307(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1307(arr, p + 1, end);
+}
+
+// 
+
+int partition1308(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1308(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1308(arr, start, end);
+
+	// Sorting the left part
+	quickSort1308(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1308(arr, p + 1, end);
+}
+
+// 
+
+int partition1309(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1309(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1309(arr, start, end);
+
+	// Sorting the left part
+	quickSort1309(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1309(arr, p + 1, end);
+}
+
+// 
+
+int partition1310(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1310(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1310(arr, start, end);
+
+	// Sorting the left part
+	quickSort1310(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1310(arr, p + 1, end);
+}
+
+// 
+
+int partition1311(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1311(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1311(arr, start, end);
+
+	// Sorting the left part
+	quickSort1311(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1311(arr, p + 1, end);
+}
+
+// 
+
+int partition1312(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1312(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1312(arr, start, end);
+
+	// Sorting the left part
+	quickSort1312(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1312(arr, p + 1, end);
+}
+
+// 
+
+int partition1313(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1313(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1313(arr, start, end);
+
+	// Sorting the left part
+	quickSort1313(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1313(arr, p + 1, end);
+}
+
+// 
+
+int partition1314(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1314(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1314(arr, start, end);
+
+	// Sorting the left part
+	quickSort1314(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1314(arr, p + 1, end);
+}
+
+// 
+
+int partition1315(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1315(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1315(arr, start, end);
+
+	// Sorting the left part
+	quickSort1315(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1315(arr, p + 1, end);
+}
+
+// 
+
+int partition1316(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1316(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1316(arr, start, end);
+
+	// Sorting the left part
+	quickSort1316(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1316(arr, p + 1, end);
+}
+
+// 
+
+int partition1317(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1317(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1317(arr, start, end);
+
+	// Sorting the left part
+	quickSort1317(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1317(arr, p + 1, end);
+}
+
+// 
+
+int partition1318(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1318(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1318(arr, start, end);
+
+	// Sorting the left part
+	quickSort1318(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1318(arr, p + 1, end);
+}
+
+// 
+
+int partition1319(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1319(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1319(arr, start, end);
+
+	// Sorting the left part
+	quickSort1319(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1319(arr, p + 1, end);
+}
+
+// 
+
+int partition1320(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1320(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1320(arr, start, end);
+
+	// Sorting the left part
+	quickSort1320(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1320(arr, p + 1, end);
+}
+
+// 
+
+int partition1321(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1321(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1321(arr, start, end);
+
+	// Sorting the left part
+	quickSort1321(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1321(arr, p + 1, end);
+}
+
+// 
+
+int partition1322(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1322(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1322(arr, start, end);
+
+	// Sorting the left part
+	quickSort1322(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1322(arr, p + 1, end);
+}
+
+// 
+
+int partition1323(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1323(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1323(arr, start, end);
+
+	// Sorting the left part
+	quickSort1323(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1323(arr, p + 1, end);
+}
+
+// 
+
+int partition1324(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1324(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1324(arr, start, end);
+
+	// Sorting the left part
+	quickSort1324(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1324(arr, p + 1, end);
+}
+
+// 
+
+int partition1325(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1325(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1325(arr, start, end);
+
+	// Sorting the left part
+	quickSort1325(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1325(arr, p + 1, end);
+}
+
+// 
+
+int partition1326(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1326(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1326(arr, start, end);
+
+	// Sorting the left part
+	quickSort1326(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1326(arr, p + 1, end);
+}
+
+// 
+
+int partition1327(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1327(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1327(arr, start, end);
+
+	// Sorting the left part
+	quickSort1327(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1327(arr, p + 1, end);
+}
+
+// 
+
+int partition1328(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1328(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1328(arr, start, end);
+
+	// Sorting the left part
+	quickSort1328(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1328(arr, p + 1, end);
+}
+
+// 
+
+int partition1329(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1329(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1329(arr, start, end);
+
+	// Sorting the left part
+	quickSort1329(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1329(arr, p + 1, end);
+}
+
+// 
+
+int partition1330(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1330(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1330(arr, start, end);
+
+	// Sorting the left part
+	quickSort1330(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1330(arr, p + 1, end);
+}
+
+// 
+
+int partition1331(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1331(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1331(arr, start, end);
+
+	// Sorting the left part
+	quickSort1331(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1331(arr, p + 1, end);
+}
+
+// 
+
+int partition1332(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1332(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1332(arr, start, end);
+
+	// Sorting the left part
+	quickSort1332(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1332(arr, p + 1, end);
+}
+
+// 
+
+int partition1333(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1333(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1333(arr, start, end);
+
+	// Sorting the left part
+	quickSort1333(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1333(arr, p + 1, end);
+}
+
+// 
+
+int partition1334(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1334(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1334(arr, start, end);
+
+	// Sorting the left part
+	quickSort1334(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1334(arr, p + 1, end);
+}
+
+// 
+
+int partition1335(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1335(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1335(arr, start, end);
+
+	// Sorting the left part
+	quickSort1335(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1335(arr, p + 1, end);
+}
+
+// 
+
+int partition1336(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1336(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1336(arr, start, end);
+
+	// Sorting the left part
+	quickSort1336(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1336(arr, p + 1, end);
+}
+
+// 
+
+int partition1337(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1337(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1337(arr, start, end);
+
+	// Sorting the left part
+	quickSort1337(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1337(arr, p + 1, end);
+}
+
+// 
+
+int partition1338(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1338(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1338(arr, start, end);
+
+	// Sorting the left part
+	quickSort1338(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1338(arr, p + 1, end);
+}
+
+// 
+
+int partition1339(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1339(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1339(arr, start, end);
+
+	// Sorting the left part
+	quickSort1339(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1339(arr, p + 1, end);
+}
+
+// 
+
+int partition1340(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1340(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1340(arr, start, end);
+
+	// Sorting the left part
+	quickSort1340(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1340(arr, p + 1, end);
+}
+
+// 
+
+int partition1341(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1341(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1341(arr, start, end);
+
+	// Sorting the left part
+	quickSort1341(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1341(arr, p + 1, end);
+}
+
+// 
+
+int partition1342(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1342(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1342(arr, start, end);
+
+	// Sorting the left part
+	quickSort1342(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1342(arr, p + 1, end);
+}
+
+// 
+
+int partition1343(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1343(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1343(arr, start, end);
+
+	// Sorting the left part
+	quickSort1343(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1343(arr, p + 1, end);
+}
+
+// 
+
+int partition1344(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1344(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1344(arr, start, end);
+
+	// Sorting the left part
+	quickSort1344(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1344(arr, p + 1, end);
+}
+
+// 
+
+int partition1345(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1345(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1345(arr, start, end);
+
+	// Sorting the left part
+	quickSort1345(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1345(arr, p + 1, end);
+}
+
+// 
+
+int partition1346(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1346(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1346(arr, start, end);
+
+	// Sorting the left part
+	quickSort1346(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1346(arr, p + 1, end);
+}
+
+// 
+
+int partition1347(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1347(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1347(arr, start, end);
+
+	// Sorting the left part
+	quickSort1347(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1347(arr, p + 1, end);
+}
+
+// 
+
+int partition1348(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1348(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1348(arr, start, end);
+
+	// Sorting the left part
+	quickSort1348(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1348(arr, p + 1, end);
+}
+
+// 
+
+int partition1349(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1349(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1349(arr, start, end);
+
+	// Sorting the left part
+	quickSort1349(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1349(arr, p + 1, end);
+}
+
+// 
+
+int partition1350(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1350(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1350(arr, start, end);
+
+	// Sorting the left part
+	quickSort1350(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1350(arr, p + 1, end);
+}
+
+// 
+
+int partition1351(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1351(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1351(arr, start, end);
+
+	// Sorting the left part
+	quickSort1351(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1351(arr, p + 1, end);
+}
+
+// 
+
+int partition1352(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1352(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1352(arr, start, end);
+
+	// Sorting the left part
+	quickSort1352(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1352(arr, p + 1, end);
+}
+
+// 
+
+int partition1353(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1353(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1353(arr, start, end);
+
+	// Sorting the left part
+	quickSort1353(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1353(arr, p + 1, end);
+}
+
+// 
+
+int partition1354(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1354(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1354(arr, start, end);
+
+	// Sorting the left part
+	quickSort1354(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1354(arr, p + 1, end);
+}
+
+// 
+
+int partition1355(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1355(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1355(arr, start, end);
+
+	// Sorting the left part
+	quickSort1355(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1355(arr, p + 1, end);
+}
+
+// 
+
+int partition1356(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1356(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1356(arr, start, end);
+
+	// Sorting the left part
+	quickSort1356(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1356(arr, p + 1, end);
+}
+
+// 
+
+int partition1357(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1357(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1357(arr, start, end);
+
+	// Sorting the left part
+	quickSort1357(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1357(arr, p + 1, end);
+}
+
+// 
+
+int partition1358(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1358(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1358(arr, start, end);
+
+	// Sorting the left part
+	quickSort1358(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1358(arr, p + 1, end);
+}
+
+// 
+
+int partition1359(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1359(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1359(arr, start, end);
+
+	// Sorting the left part
+	quickSort1359(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1359(arr, p + 1, end);
+}
+
+// 
+
+int partition1360(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1360(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1360(arr, start, end);
+
+	// Sorting the left part
+	quickSort1360(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1360(arr, p + 1, end);
+}
+
+// 
+
+int partition1361(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1361(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1361(arr, start, end);
+
+	// Sorting the left part
+	quickSort1361(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1361(arr, p + 1, end);
+}
+
+// 
+
+int partition1362(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1362(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1362(arr, start, end);
+
+	// Sorting the left part
+	quickSort1362(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1362(arr, p + 1, end);
+}
+
+// 
+
+int partition1363(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1363(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1363(arr, start, end);
+
+	// Sorting the left part
+	quickSort1363(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1363(arr, p + 1, end);
+}
+
+// 
+
+int partition1364(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1364(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1364(arr, start, end);
+
+	// Sorting the left part
+	quickSort1364(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1364(arr, p + 1, end);
+}
+
+// 
+
+int partition1365(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1365(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1365(arr, start, end);
+
+	// Sorting the left part
+	quickSort1365(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1365(arr, p + 1, end);
+}
+
+// 
+
+int partition1366(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1366(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1366(arr, start, end);
+
+	// Sorting the left part
+	quickSort1366(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1366(arr, p + 1, end);
+}
+
+// 
+
+int partition1367(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1367(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1367(arr, start, end);
+
+	// Sorting the left part
+	quickSort1367(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1367(arr, p + 1, end);
+}
+
+// 
+
+int partition1368(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1368(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1368(arr, start, end);
+
+	// Sorting the left part
+	quickSort1368(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1368(arr, p + 1, end);
+}
+
+// 
+
+int partition1369(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1369(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1369(arr, start, end);
+
+	// Sorting the left part
+	quickSort1369(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1369(arr, p + 1, end);
+}
+
+// 
+
+int partition1370(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1370(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1370(arr, start, end);
+
+	// Sorting the left part
+	quickSort1370(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1370(arr, p + 1, end);
+}
+
+// 
+
+int partition1371(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1371(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1371(arr, start, end);
+
+	// Sorting the left part
+	quickSort1371(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1371(arr, p + 1, end);
+}
+
+// 
+
+int partition1372(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1372(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1372(arr, start, end);
+
+	// Sorting the left part
+	quickSort1372(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1372(arr, p + 1, end);
+}
+
+// 
+
+int partition1373(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1373(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1373(arr, start, end);
+
+	// Sorting the left part
+	quickSort1373(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1373(arr, p + 1, end);
+}
+
+// 
+
+int partition1374(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1374(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1374(arr, start, end);
+
+	// Sorting the left part
+	quickSort1374(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1374(arr, p + 1, end);
+}
+
+// 
+
+int partition1375(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1375(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1375(arr, start, end);
+
+	// Sorting the left part
+	quickSort1375(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1375(arr, p + 1, end);
+}
+
+// 
+
+int partition1376(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1376(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1376(arr, start, end);
+
+	// Sorting the left part
+	quickSort1376(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1376(arr, p + 1, end);
+}
+
+// 
+
+int partition1377(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1377(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1377(arr, start, end);
+
+	// Sorting the left part
+	quickSort1377(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1377(arr, p + 1, end);
+}
+
+// 
+
+int partition1378(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1378(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1378(arr, start, end);
+
+	// Sorting the left part
+	quickSort1378(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1378(arr, p + 1, end);
+}
+
+// 
+
+int partition1379(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1379(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1379(arr, start, end);
+
+	// Sorting the left part
+	quickSort1379(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1379(arr, p + 1, end);
+}
+
+// 
+
+int partition1380(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1380(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1380(arr, start, end);
+
+	// Sorting the left part
+	quickSort1380(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1380(arr, p + 1, end);
+}
+
+// 
+
+int partition1381(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1381(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1381(arr, start, end);
+
+	// Sorting the left part
+	quickSort1381(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1381(arr, p + 1, end);
+}
+
+// 
+
+int partition1382(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1382(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1382(arr, start, end);
+
+	// Sorting the left part
+	quickSort1382(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1382(arr, p + 1, end);
+}
+
+// 
+
+int partition1383(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1383(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1383(arr, start, end);
+
+	// Sorting the left part
+	quickSort1383(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1383(arr, p + 1, end);
+}
+
+// 
+
+int partition1384(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1384(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1384(arr, start, end);
+
+	// Sorting the left part
+	quickSort1384(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1384(arr, p + 1, end);
+}
+
+// 
+
+int partition1385(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1385(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1385(arr, start, end);
+
+	// Sorting the left part
+	quickSort1385(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1385(arr, p + 1, end);
+}
+
+// 
+
+int partition1386(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1386(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1386(arr, start, end);
+
+	// Sorting the left part
+	quickSort1386(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1386(arr, p + 1, end);
+}
+
+// 
+
+int partition1387(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1387(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1387(arr, start, end);
+
+	// Sorting the left part
+	quickSort1387(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1387(arr, p + 1, end);
+}
+
+// 
+
+int partition1388(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1388(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1388(arr, start, end);
+
+	// Sorting the left part
+	quickSort1388(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1388(arr, p + 1, end);
+}
+
+// 
+
+int partition1389(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1389(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1389(arr, start, end);
+
+	// Sorting the left part
+	quickSort1389(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1389(arr, p + 1, end);
+}
+
+// 
+
+int partition1390(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1390(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1390(arr, start, end);
+
+	// Sorting the left part
+	quickSort1390(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1390(arr, p + 1, end);
+}
+
+// 
+
+int partition1391(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1391(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1391(arr, start, end);
+
+	// Sorting the left part
+	quickSort1391(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1391(arr, p + 1, end);
+}
+
+// 
+
+int partition1392(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1392(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1392(arr, start, end);
+
+	// Sorting the left part
+	quickSort1392(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1392(arr, p + 1, end);
+}
+
+// 
+
+int partition1393(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1393(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1393(arr, start, end);
+
+	// Sorting the left part
+	quickSort1393(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1393(arr, p + 1, end);
+}
+
+// 
+
+int partition1394(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1394(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1394(arr, start, end);
+
+	// Sorting the left part
+	quickSort1394(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1394(arr, p + 1, end);
+}
+
+// 
+
+int partition1395(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1395(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1395(arr, start, end);
+
+	// Sorting the left part
+	quickSort1395(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1395(arr, p + 1, end);
+}
+
+// 
+
+int partition1396(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1396(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1396(arr, start, end);
+
+	// Sorting the left part
+	quickSort1396(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1396(arr, p + 1, end);
+}
+
+// 
+
+int partition1397(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1397(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1397(arr, start, end);
+
+	// Sorting the left part
+	quickSort1397(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1397(arr, p + 1, end);
+}
+
+// 
+
+int partition1398(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1398(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1398(arr, start, end);
+
+	// Sorting the left part
+	quickSort1398(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1398(arr, p + 1, end);
+}
+
+// 
+
+int partition1399(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1399(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1399(arr, start, end);
+
+	// Sorting the left part
+	quickSort1399(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1399(arr, p + 1, end);
+}
+
+// 
+
+int partition1400(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1400(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1400(arr, start, end);
+
+	// Sorting the left part
+	quickSort1400(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1400(arr, p + 1, end);
+}
+
+// 
+
+int partition1401(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1401(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1401(arr, start, end);
+
+	// Sorting the left part
+	quickSort1401(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1401(arr, p + 1, end);
+}
+
+// 
+
+int partition1402(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1402(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1402(arr, start, end);
+
+	// Sorting the left part
+	quickSort1402(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1402(arr, p + 1, end);
+}
+
+// 
+
+int partition1403(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1403(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1403(arr, start, end);
+
+	// Sorting the left part
+	quickSort1403(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1403(arr, p + 1, end);
+}
+
+// 
+
+int partition1404(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1404(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1404(arr, start, end);
+
+	// Sorting the left part
+	quickSort1404(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1404(arr, p + 1, end);
+}
+
+// 
+
+int partition1405(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1405(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1405(arr, start, end);
+
+	// Sorting the left part
+	quickSort1405(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1405(arr, p + 1, end);
+}
+
+// 
+
+int partition1406(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1406(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1406(arr, start, end);
+
+	// Sorting the left part
+	quickSort1406(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1406(arr, p + 1, end);
+}
+
+// 
+
+int partition1407(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1407(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1407(arr, start, end);
+
+	// Sorting the left part
+	quickSort1407(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1407(arr, p + 1, end);
+}
+
+// 
+
+int partition1408(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1408(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1408(arr, start, end);
+
+	// Sorting the left part
+	quickSort1408(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1408(arr, p + 1, end);
+}
+
+// 
+
+int partition1409(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1409(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1409(arr, start, end);
+
+	// Sorting the left part
+	quickSort1409(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1409(arr, p + 1, end);
+}
+
+// 
+
+int partition1410(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1410(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1410(arr, start, end);
+
+	// Sorting the left part
+	quickSort1410(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1410(arr, p + 1, end);
+}
+
+// 
+
+int partition1411(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1411(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1411(arr, start, end);
+
+	// Sorting the left part
+	quickSort1411(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1411(arr, p + 1, end);
+}
+
+// 
+
+int partition1412(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1412(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1412(arr, start, end);
+
+	// Sorting the left part
+	quickSort1412(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1412(arr, p + 1, end);
+}
+
+// 
+
+int partition1413(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1413(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1413(arr, start, end);
+
+	// Sorting the left part
+	quickSort1413(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1413(arr, p + 1, end);
+}
+
+// 
+
+int partition1414(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1414(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1414(arr, start, end);
+
+	// Sorting the left part
+	quickSort1414(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1414(arr, p + 1, end);
+}
+
+// 
+
+int partition1415(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1415(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1415(arr, start, end);
+
+	// Sorting the left part
+	quickSort1415(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1415(arr, p + 1, end);
+}
+
+// 
+
+int partition1416(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1416(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1416(arr, start, end);
+
+	// Sorting the left part
+	quickSort1416(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1416(arr, p + 1, end);
+}
+
+// 
+
+int partition1417(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1417(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1417(arr, start, end);
+
+	// Sorting the left part
+	quickSort1417(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1417(arr, p + 1, end);
+}
+
+// 
+
+int partition1418(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1418(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1418(arr, start, end);
+
+	// Sorting the left part
+	quickSort1418(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1418(arr, p + 1, end);
+}
+
+// 
+
+int partition1419(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1419(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1419(arr, start, end);
+
+	// Sorting the left part
+	quickSort1419(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1419(arr, p + 1, end);
+}
+
+// 
+
+int partition1420(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1420(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1420(arr, start, end);
+
+	// Sorting the left part
+	quickSort1420(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1420(arr, p + 1, end);
+}
+
+// 
+
+int partition1421(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1421(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1421(arr, start, end);
+
+	// Sorting the left part
+	quickSort1421(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1421(arr, p + 1, end);
+}
+
+// 
+
+int partition1422(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1422(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1422(arr, start, end);
+
+	// Sorting the left part
+	quickSort1422(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1422(arr, p + 1, end);
+}
+
+// 
+
+int partition1423(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1423(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1423(arr, start, end);
+
+	// Sorting the left part
+	quickSort1423(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1423(arr, p + 1, end);
+}
+
+// 
+
+int partition1424(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1424(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1424(arr, start, end);
+
+	// Sorting the left part
+	quickSort1424(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1424(arr, p + 1, end);
+}
+
+// 
+
+int partition1425(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1425(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1425(arr, start, end);
+
+	// Sorting the left part
+	quickSort1425(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1425(arr, p + 1, end);
+}
+
+// 
+
+int partition1426(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1426(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1426(arr, start, end);
+
+	// Sorting the left part
+	quickSort1426(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1426(arr, p + 1, end);
+}
+
+// 
+
+int partition1427(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1427(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1427(arr, start, end);
+
+	// Sorting the left part
+	quickSort1427(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1427(arr, p + 1, end);
+}
+
+// 
+
+int partition1428(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1428(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1428(arr, start, end);
+
+	// Sorting the left part
+	quickSort1428(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1428(arr, p + 1, end);
+}
+
+// 
+
+int partition1429(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1429(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1429(arr, start, end);
+
+	// Sorting the left part
+	quickSort1429(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1429(arr, p + 1, end);
+}
+
+// 
+
+int partition1430(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1430(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1430(arr, start, end);
+
+	// Sorting the left part
+	quickSort1430(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1430(arr, p + 1, end);
+}
+
+// 
+
+int partition1431(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1431(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1431(arr, start, end);
+
+	// Sorting the left part
+	quickSort1431(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1431(arr, p + 1, end);
+}
+
+// 
+
+int partition1432(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1432(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1432(arr, start, end);
+
+	// Sorting the left part
+	quickSort1432(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1432(arr, p + 1, end);
+}
+
+// 
+
+int partition1433(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1433(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1433(arr, start, end);
+
+	// Sorting the left part
+	quickSort1433(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1433(arr, p + 1, end);
+}
+
+// 
+
+int partition1434(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1434(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1434(arr, start, end);
+
+	// Sorting the left part
+	quickSort1434(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1434(arr, p + 1, end);
+}
+
+// 
+
+int partition1435(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1435(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1435(arr, start, end);
+
+	// Sorting the left part
+	quickSort1435(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1435(arr, p + 1, end);
+}
+
+// 
+
+int partition1436(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1436(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1436(arr, start, end);
+
+	// Sorting the left part
+	quickSort1436(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1436(arr, p + 1, end);
+}
+
+// 
+
+int partition1437(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1437(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1437(arr, start, end);
+
+	// Sorting the left part
+	quickSort1437(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1437(arr, p + 1, end);
+}
+
+// 
+
+int partition1438(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1438(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1438(arr, start, end);
+
+	// Sorting the left part
+	quickSort1438(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1438(arr, p + 1, end);
+}
+
+// 
+
+int partition1439(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1439(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1439(arr, start, end);
+
+	// Sorting the left part
+	quickSort1439(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1439(arr, p + 1, end);
+}
+
+// 
+
+int partition1440(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1440(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1440(arr, start, end);
+
+	// Sorting the left part
+	quickSort1440(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1440(arr, p + 1, end);
+}
+
+// 
+
+int partition1441(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1441(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1441(arr, start, end);
+
+	// Sorting the left part
+	quickSort1441(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1441(arr, p + 1, end);
+}
+
+// 
+
+int partition1442(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1442(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1442(arr, start, end);
+
+	// Sorting the left part
+	quickSort1442(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1442(arr, p + 1, end);
+}
+
+// 
+
+int partition1443(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1443(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1443(arr, start, end);
+
+	// Sorting the left part
+	quickSort1443(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1443(arr, p + 1, end);
+}
+
+// 
+
+int partition1444(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1444(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1444(arr, start, end);
+
+	// Sorting the left part
+	quickSort1444(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1444(arr, p + 1, end);
+}
+
+// 
+
+int partition1445(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1445(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1445(arr, start, end);
+
+	// Sorting the left part
+	quickSort1445(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1445(arr, p + 1, end);
+}
+
+// 
+
+int partition1446(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1446(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1446(arr, start, end);
+
+	// Sorting the left part
+	quickSort1446(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1446(arr, p + 1, end);
+}
+
+// 
+
+int partition1447(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1447(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1447(arr, start, end);
+
+	// Sorting the left part
+	quickSort1447(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1447(arr, p + 1, end);
+}
+
+// 
+
+int partition1448(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1448(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1448(arr, start, end);
+
+	// Sorting the left part
+	quickSort1448(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1448(arr, p + 1, end);
+}
+
+// 
+
+int partition1449(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1449(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1449(arr, start, end);
+
+	// Sorting the left part
+	quickSort1449(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1449(arr, p + 1, end);
+}
+
+// 
+
+int partition1450(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1450(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1450(arr, start, end);
+
+	// Sorting the left part
+	quickSort1450(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1450(arr, p + 1, end);
+}
+
+// 
+
+int partition1451(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1451(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1451(arr, start, end);
+
+	// Sorting the left part
+	quickSort1451(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1451(arr, p + 1, end);
+}
+
+// 
+
+int partition1452(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1452(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1452(arr, start, end);
+
+	// Sorting the left part
+	quickSort1452(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1452(arr, p + 1, end);
+}
+
+// 
+
+int partition1453(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1453(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1453(arr, start, end);
+
+	// Sorting the left part
+	quickSort1453(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1453(arr, p + 1, end);
+}
+
+// 
+
+int partition1454(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1454(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1454(arr, start, end);
+
+	// Sorting the left part
+	quickSort1454(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1454(arr, p + 1, end);
+}
+
+// 
+
+int partition1455(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1455(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1455(arr, start, end);
+
+	// Sorting the left part
+	quickSort1455(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1455(arr, p + 1, end);
+}
+
+// 
+
+int partition1456(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1456(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1456(arr, start, end);
+
+	// Sorting the left part
+	quickSort1456(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1456(arr, p + 1, end);
+}
+
+// 
+
+int partition1457(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1457(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1457(arr, start, end);
+
+	// Sorting the left part
+	quickSort1457(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1457(arr, p + 1, end);
+}
+
+// 
+
+int partition1458(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1458(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1458(arr, start, end);
+
+	// Sorting the left part
+	quickSort1458(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1458(arr, p + 1, end);
+}
+
+// 
+
+int partition1459(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1459(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1459(arr, start, end);
+
+	// Sorting the left part
+	quickSort1459(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1459(arr, p + 1, end);
+}
+
+// 
+
+int partition1460(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1460(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1460(arr, start, end);
+
+	// Sorting the left part
+	quickSort1460(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1460(arr, p + 1, end);
+}
+
+// 
+
+int partition1461(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1461(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1461(arr, start, end);
+
+	// Sorting the left part
+	quickSort1461(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1461(arr, p + 1, end);
+}
+
+// 
+
+int partition1462(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1462(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1462(arr, start, end);
+
+	// Sorting the left part
+	quickSort1462(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1462(arr, p + 1, end);
+}
+
+// 
+
+int partition1463(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1463(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1463(arr, start, end);
+
+	// Sorting the left part
+	quickSort1463(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1463(arr, p + 1, end);
+}
+
+// 
+
+int partition1464(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1464(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1464(arr, start, end);
+
+	// Sorting the left part
+	quickSort1464(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1464(arr, p + 1, end);
+}
+
+// 
+
+int partition1465(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1465(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1465(arr, start, end);
+
+	// Sorting the left part
+	quickSort1465(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1465(arr, p + 1, end);
+}
+
+// 
+
+int partition1466(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1466(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1466(arr, start, end);
+
+	// Sorting the left part
+	quickSort1466(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1466(arr, p + 1, end);
+}
+
+// 
+
+int partition1467(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1467(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1467(arr, start, end);
+
+	// Sorting the left part
+	quickSort1467(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1467(arr, p + 1, end);
+}
+
+// 
+
+int partition1468(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1468(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1468(arr, start, end);
+
+	// Sorting the left part
+	quickSort1468(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1468(arr, p + 1, end);
+}
+
+// 
+
+int partition1469(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1469(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1469(arr, start, end);
+
+	// Sorting the left part
+	quickSort1469(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1469(arr, p + 1, end);
+}
+
+// 
+
+int partition1470(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1470(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1470(arr, start, end);
+
+	// Sorting the left part
+	quickSort1470(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1470(arr, p + 1, end);
+}
+
+// 
+
+int partition1471(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1471(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1471(arr, start, end);
+
+	// Sorting the left part
+	quickSort1471(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1471(arr, p + 1, end);
+}
+
+// 
+
+int partition1472(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1472(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1472(arr, start, end);
+
+	// Sorting the left part
+	quickSort1472(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1472(arr, p + 1, end);
+}
+
+// 
+
+int partition1473(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1473(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1473(arr, start, end);
+
+	// Sorting the left part
+	quickSort1473(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1473(arr, p + 1, end);
+}
+
+// 
+
+int partition1474(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1474(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1474(arr, start, end);
+
+	// Sorting the left part
+	quickSort1474(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1474(arr, p + 1, end);
+}
+
+// 
+
+int partition1475(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1475(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1475(arr, start, end);
+
+	// Sorting the left part
+	quickSort1475(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1475(arr, p + 1, end);
+}
+
+// 
+
+int partition1476(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1476(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1476(arr, start, end);
+
+	// Sorting the left part
+	quickSort1476(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1476(arr, p + 1, end);
+}
+
+// 
+
+int partition1477(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1477(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1477(arr, start, end);
+
+	// Sorting the left part
+	quickSort1477(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1477(arr, p + 1, end);
+}
+
+// 
+
+int partition1478(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1478(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1478(arr, start, end);
+
+	// Sorting the left part
+	quickSort1478(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1478(arr, p + 1, end);
+}
+
+// 
+
+int partition1479(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1479(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1479(arr, start, end);
+
+	// Sorting the left part
+	quickSort1479(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1479(arr, p + 1, end);
+}
+
+// 
+
+int partition1480(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1480(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1480(arr, start, end);
+
+	// Sorting the left part
+	quickSort1480(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1480(arr, p + 1, end);
+}
+
+// 
+
+int partition1481(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1481(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1481(arr, start, end);
+
+	// Sorting the left part
+	quickSort1481(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1481(arr, p + 1, end);
+}
+
+// 
+
+int partition1482(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1482(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1482(arr, start, end);
+
+	// Sorting the left part
+	quickSort1482(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1482(arr, p + 1, end);
+}
+
+// 
+
+int partition1483(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1483(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1483(arr, start, end);
+
+	// Sorting the left part
+	quickSort1483(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1483(arr, p + 1, end);
+}
+
+// 
+
+int partition1484(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1484(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1484(arr, start, end);
+
+	// Sorting the left part
+	quickSort1484(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1484(arr, p + 1, end);
+}
+
+// 
+
+int partition1485(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1485(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1485(arr, start, end);
+
+	// Sorting the left part
+	quickSort1485(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1485(arr, p + 1, end);
+}
+
+// 
+
+int partition1486(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1486(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1486(arr, start, end);
+
+	// Sorting the left part
+	quickSort1486(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1486(arr, p + 1, end);
+}
+
+// 
+
+int partition1487(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1487(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1487(arr, start, end);
+
+	// Sorting the left part
+	quickSort1487(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1487(arr, p + 1, end);
+}
+
+// 
+
+int partition1488(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1488(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1488(arr, start, end);
+
+	// Sorting the left part
+	quickSort1488(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1488(arr, p + 1, end);
+}
+
+// 
+
+int partition1489(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1489(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1489(arr, start, end);
+
+	// Sorting the left part
+	quickSort1489(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1489(arr, p + 1, end);
+}
+
+// 
+
+int partition1490(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1490(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1490(arr, start, end);
+
+	// Sorting the left part
+	quickSort1490(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1490(arr, p + 1, end);
+}
+
+// 
+
+int partition1491(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1491(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1491(arr, start, end);
+
+	// Sorting the left part
+	quickSort1491(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1491(arr, p + 1, end);
+}
+
+// 
+
+int partition1492(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1492(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1492(arr, start, end);
+
+	// Sorting the left part
+	quickSort1492(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1492(arr, p + 1, end);
+}
+
+// 
+
+int partition1493(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1493(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1493(arr, start, end);
+
+	// Sorting the left part
+	quickSort1493(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1493(arr, p + 1, end);
+}
+
+// 
+
+int partition1494(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1494(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1494(arr, start, end);
+
+	// Sorting the left part
+	quickSort1494(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1494(arr, p + 1, end);
+}
+
+// 
+
+int partition1495(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1495(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1495(arr, start, end);
+
+	// Sorting the left part
+	quickSort1495(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1495(arr, p + 1, end);
+}
+
+// 
+
+int partition1496(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1496(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1496(arr, start, end);
+
+	// Sorting the left part
+	quickSort1496(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1496(arr, p + 1, end);
+}
+
+// 
+
+int partition1497(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1497(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1497(arr, start, end);
+
+	// Sorting the left part
+	quickSort1497(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1497(arr, p + 1, end);
+}
+
+// 
+
+int partition1498(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1498(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1498(arr, start, end);
+
+	// Sorting the left part
+	quickSort1498(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1498(arr, p + 1, end);
+}
+
+// 
+
+int partition1499(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1499(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1499(arr, start, end);
+
+	// Sorting the left part
+	quickSort1499(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1499(arr, p + 1, end);
+}
+
+// 
+
+int partition1500(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1500(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1500(arr, start, end);
+
+	// Sorting the left part
+	quickSort1500(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1500(arr, p + 1, end);
+}
+
+// 
+
+int partition1501(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1501(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1501(arr, start, end);
+
+	// Sorting the left part
+	quickSort1501(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1501(arr, p + 1, end);
+}
+
+// 
+
+int partition1502(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1502(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1502(arr, start, end);
+
+	// Sorting the left part
+	quickSort1502(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1502(arr, p + 1, end);
+}
+
+// 
+
+int partition1503(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1503(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1503(arr, start, end);
+
+	// Sorting the left part
+	quickSort1503(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1503(arr, p + 1, end);
+}
+
+// 
+
+int partition1504(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1504(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1504(arr, start, end);
+
+	// Sorting the left part
+	quickSort1504(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1504(arr, p + 1, end);
+}
+
+// 
+
+int partition1505(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1505(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1505(arr, start, end);
+
+	// Sorting the left part
+	quickSort1505(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1505(arr, p + 1, end);
+}
+
+// 
+
+int partition1506(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1506(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1506(arr, start, end);
+
+	// Sorting the left part
+	quickSort1506(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1506(arr, p + 1, end);
+}
+
+// 
+
+int partition1507(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1507(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1507(arr, start, end);
+
+	// Sorting the left part
+	quickSort1507(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1507(arr, p + 1, end);
+}
+
+// 
+
+int partition1508(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1508(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1508(arr, start, end);
+
+	// Sorting the left part
+	quickSort1508(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1508(arr, p + 1, end);
+}
+
+// 
+
+int partition1509(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1509(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1509(arr, start, end);
+
+	// Sorting the left part
+	quickSort1509(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1509(arr, p + 1, end);
+}
+
+// 
+
+int partition1510(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1510(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1510(arr, start, end);
+
+	// Sorting the left part
+	quickSort1510(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1510(arr, p + 1, end);
+}
+
+// 
+
+int partition1511(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1511(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1511(arr, start, end);
+
+	// Sorting the left part
+	quickSort1511(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1511(arr, p + 1, end);
+}
+
+// 
+
+int partition1512(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1512(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1512(arr, start, end);
+
+	// Sorting the left part
+	quickSort1512(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1512(arr, p + 1, end);
+}
+
+// 
+
+int partition1513(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1513(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1513(arr, start, end);
+
+	// Sorting the left part
+	quickSort1513(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1513(arr, p + 1, end);
+}
+
+// 
+
+int partition1514(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1514(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1514(arr, start, end);
+
+	// Sorting the left part
+	quickSort1514(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1514(arr, p + 1, end);
+}
+
+// 
+
+int partition1515(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1515(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1515(arr, start, end);
+
+	// Sorting the left part
+	quickSort1515(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1515(arr, p + 1, end);
+}
+
+// 
+
+int partition1516(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1516(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1516(arr, start, end);
+
+	// Sorting the left part
+	quickSort1516(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1516(arr, p + 1, end);
+}
+
+// 
+
+int partition1517(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1517(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1517(arr, start, end);
+
+	// Sorting the left part
+	quickSort1517(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1517(arr, p + 1, end);
+}
+
+// 
+
+int partition1518(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1518(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1518(arr, start, end);
+
+	// Sorting the left part
+	quickSort1518(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1518(arr, p + 1, end);
+}
+
+// 
+
+int partition1519(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1519(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1519(arr, start, end);
+
+	// Sorting the left part
+	quickSort1519(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1519(arr, p + 1, end);
+}
+
+// 
+
+int partition1520(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1520(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1520(arr, start, end);
+
+	// Sorting the left part
+	quickSort1520(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1520(arr, p + 1, end);
+}
+
+// 
+
+int partition1521(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1521(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1521(arr, start, end);
+
+	// Sorting the left part
+	quickSort1521(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1521(arr, p + 1, end);
+}
+
+// 
+
+int partition1522(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1522(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1522(arr, start, end);
+
+	// Sorting the left part
+	quickSort1522(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1522(arr, p + 1, end);
+}
+
+// 
+
+int partition1523(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1523(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1523(arr, start, end);
+
+	// Sorting the left part
+	quickSort1523(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1523(arr, p + 1, end);
+}
+
+// 
+
+int partition1524(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1524(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1524(arr, start, end);
+
+	// Sorting the left part
+	quickSort1524(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1524(arr, p + 1, end);
+}
+
+// 
+
+int partition1525(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1525(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1525(arr, start, end);
+
+	// Sorting the left part
+	quickSort1525(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1525(arr, p + 1, end);
+}
+
+// 
+
+int partition1526(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1526(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1526(arr, start, end);
+
+	// Sorting the left part
+	quickSort1526(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1526(arr, p + 1, end);
+}
+
+// 
+
+int partition1527(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1527(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1527(arr, start, end);
+
+	// Sorting the left part
+	quickSort1527(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1527(arr, p + 1, end);
+}
+
+// 
+
+int partition1528(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1528(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1528(arr, start, end);
+
+	// Sorting the left part
+	quickSort1528(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1528(arr, p + 1, end);
+}
+
+// 
+
+int partition1529(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1529(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1529(arr, start, end);
+
+	// Sorting the left part
+	quickSort1529(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1529(arr, p + 1, end);
+}
+
+// 
+
+int partition1530(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1530(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1530(arr, start, end);
+
+	// Sorting the left part
+	quickSort1530(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1530(arr, p + 1, end);
+}
+
+// 
+
+int partition1531(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1531(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1531(arr, start, end);
+
+	// Sorting the left part
+	quickSort1531(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1531(arr, p + 1, end);
+}
+
+// 
+
+int partition1532(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1532(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1532(arr, start, end);
+
+	// Sorting the left part
+	quickSort1532(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1532(arr, p + 1, end);
+}
+
+// 
+
+int partition1533(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1533(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1533(arr, start, end);
+
+	// Sorting the left part
+	quickSort1533(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1533(arr, p + 1, end);
+}
+
+// 
+
+int partition1534(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1534(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1534(arr, start, end);
+
+	// Sorting the left part
+	quickSort1534(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1534(arr, p + 1, end);
+}
+
+// 
+
+int partition1535(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1535(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1535(arr, start, end);
+
+	// Sorting the left part
+	quickSort1535(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1535(arr, p + 1, end);
+}
+
+// 
+
+int partition1536(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1536(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1536(arr, start, end);
+
+	// Sorting the left part
+	quickSort1536(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1536(arr, p + 1, end);
+}
+
+// 
+
+int partition1537(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1537(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1537(arr, start, end);
+
+	// Sorting the left part
+	quickSort1537(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1537(arr, p + 1, end);
+}
+
+// 
+
+int partition1538(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1538(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1538(arr, start, end);
+
+	// Sorting the left part
+	quickSort1538(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1538(arr, p + 1, end);
+}
+
+// 
+
+int partition1539(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1539(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1539(arr, start, end);
+
+	// Sorting the left part
+	quickSort1539(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1539(arr, p + 1, end);
+}
+
+// 
+
+int partition1540(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1540(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1540(arr, start, end);
+
+	// Sorting the left part
+	quickSort1540(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1540(arr, p + 1, end);
+}
+
+// 
+
+int partition1541(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1541(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1541(arr, start, end);
+
+	// Sorting the left part
+	quickSort1541(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1541(arr, p + 1, end);
+}
+
+// 
+
+int partition1542(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1542(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1542(arr, start, end);
+
+	// Sorting the left part
+	quickSort1542(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1542(arr, p + 1, end);
+}
+
+// 
+
+int partition1543(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1543(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1543(arr, start, end);
+
+	// Sorting the left part
+	quickSort1543(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1543(arr, p + 1, end);
+}
+
+// 
+
+int partition1544(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1544(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1544(arr, start, end);
+
+	// Sorting the left part
+	quickSort1544(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1544(arr, p + 1, end);
+}
+
+// 
+
+int partition1545(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1545(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1545(arr, start, end);
+
+	// Sorting the left part
+	quickSort1545(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1545(arr, p + 1, end);
+}
+
+// 
+
+int partition1546(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1546(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1546(arr, start, end);
+
+	// Sorting the left part
+	quickSort1546(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1546(arr, p + 1, end);
+}
+
+// 
+
+int partition1547(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1547(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1547(arr, start, end);
+
+	// Sorting the left part
+	quickSort1547(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1547(arr, p + 1, end);
+}
+
+// 
+
+int partition1548(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1548(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1548(arr, start, end);
+
+	// Sorting the left part
+	quickSort1548(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1548(arr, p + 1, end);
+}
+
+// 
+
+int partition1549(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1549(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1549(arr, start, end);
+
+	// Sorting the left part
+	quickSort1549(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1549(arr, p + 1, end);
+}
+
+// 
+
+int partition1550(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1550(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1550(arr, start, end);
+
+	// Sorting the left part
+	quickSort1550(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1550(arr, p + 1, end);
+}
+
+// 
+
+int partition1551(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1551(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1551(arr, start, end);
+
+	// Sorting the left part
+	quickSort1551(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1551(arr, p + 1, end);
+}
+
+// 
+
+int partition1552(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1552(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1552(arr, start, end);
+
+	// Sorting the left part
+	quickSort1552(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1552(arr, p + 1, end);
+}
+
+// 
+
+int partition1553(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1553(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1553(arr, start, end);
+
+	// Sorting the left part
+	quickSort1553(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1553(arr, p + 1, end);
+}
+
+// 
+
+int partition1554(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1554(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1554(arr, start, end);
+
+	// Sorting the left part
+	quickSort1554(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1554(arr, p + 1, end);
+}
+
+// 
+
+int partition1555(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1555(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1555(arr, start, end);
+
+	// Sorting the left part
+	quickSort1555(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1555(arr, p + 1, end);
+}
+
+// 
+
+int partition1556(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1556(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1556(arr, start, end);
+
+	// Sorting the left part
+	quickSort1556(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1556(arr, p + 1, end);
+}
+
+// 
+
+int partition1557(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1557(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1557(arr, start, end);
+
+	// Sorting the left part
+	quickSort1557(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1557(arr, p + 1, end);
+}
+
+// 
+
+int partition1558(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1558(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1558(arr, start, end);
+
+	// Sorting the left part
+	quickSort1558(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1558(arr, p + 1, end);
+}
+
+// 
+
+int partition1559(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1559(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1559(arr, start, end);
+
+	// Sorting the left part
+	quickSort1559(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1559(arr, p + 1, end);
+}
+
+// 
+
+int partition1560(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1560(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1560(arr, start, end);
+
+	// Sorting the left part
+	quickSort1560(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1560(arr, p + 1, end);
+}
+
+// 
+
+int partition1561(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1561(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1561(arr, start, end);
+
+	// Sorting the left part
+	quickSort1561(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1561(arr, p + 1, end);
+}
+
+// 
+
+int partition1562(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1562(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1562(arr, start, end);
+
+	// Sorting the left part
+	quickSort1562(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1562(arr, p + 1, end);
+}
+
+// 
+
+int partition1563(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1563(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1563(arr, start, end);
+
+	// Sorting the left part
+	quickSort1563(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1563(arr, p + 1, end);
+}
+
+// 
+
+int partition1564(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1564(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1564(arr, start, end);
+
+	// Sorting the left part
+	quickSort1564(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1564(arr, p + 1, end);
+}
+
+// 
+
+int partition1565(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1565(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1565(arr, start, end);
+
+	// Sorting the left part
+	quickSort1565(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1565(arr, p + 1, end);
+}
+
+// 
+
+int partition1566(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1566(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1566(arr, start, end);
+
+	// Sorting the left part
+	quickSort1566(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1566(arr, p + 1, end);
+}
+
+// 
+
+int partition1567(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1567(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1567(arr, start, end);
+
+	// Sorting the left part
+	quickSort1567(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1567(arr, p + 1, end);
+}
+
+// 
+
+int partition1568(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1568(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1568(arr, start, end);
+
+	// Sorting the left part
+	quickSort1568(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1568(arr, p + 1, end);
+}
+
+// 
+
+int partition1569(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1569(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1569(arr, start, end);
+
+	// Sorting the left part
+	quickSort1569(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1569(arr, p + 1, end);
+}
+
+// 
+
+int partition1570(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1570(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1570(arr, start, end);
+
+	// Sorting the left part
+	quickSort1570(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1570(arr, p + 1, end);
+}
+
+// 
+
+int partition1571(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1571(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1571(arr, start, end);
+
+	// Sorting the left part
+	quickSort1571(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1571(arr, p + 1, end);
+}
+
+// 
+
+int partition1572(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1572(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1572(arr, start, end);
+
+	// Sorting the left part
+	quickSort1572(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1572(arr, p + 1, end);
+}
+
+// 
+
+int partition1573(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1573(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1573(arr, start, end);
+
+	// Sorting the left part
+	quickSort1573(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1573(arr, p + 1, end);
+}
+
+// 
+
+int partition1574(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1574(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1574(arr, start, end);
+
+	// Sorting the left part
+	quickSort1574(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1574(arr, p + 1, end);
+}
+
+// 
+
+int partition1575(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1575(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1575(arr, start, end);
+
+	// Sorting the left part
+	quickSort1575(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1575(arr, p + 1, end);
+}
+
+// 
+
+int partition1576(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1576(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1576(arr, start, end);
+
+	// Sorting the left part
+	quickSort1576(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1576(arr, p + 1, end);
+}
+
+// 
+
+int partition1577(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1577(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1577(arr, start, end);
+
+	// Sorting the left part
+	quickSort1577(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1577(arr, p + 1, end);
+}
+
+// 
+
+int partition1578(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1578(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1578(arr, start, end);
+
+	// Sorting the left part
+	quickSort1578(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1578(arr, p + 1, end);
+}
+
+// 
+
+int partition1579(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1579(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1579(arr, start, end);
+
+	// Sorting the left part
+	quickSort1579(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1579(arr, p + 1, end);
+}
+
+// 
+
+int partition1580(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1580(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1580(arr, start, end);
+
+	// Sorting the left part
+	quickSort1580(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1580(arr, p + 1, end);
+}
+
+// 
+
+int partition1581(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1581(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1581(arr, start, end);
+
+	// Sorting the left part
+	quickSort1581(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1581(arr, p + 1, end);
+}
+
+// 
+
+int partition1582(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1582(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1582(arr, start, end);
+
+	// Sorting the left part
+	quickSort1582(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1582(arr, p + 1, end);
+}
+
+// 
+
+int partition1583(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1583(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1583(arr, start, end);
+
+	// Sorting the left part
+	quickSort1583(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1583(arr, p + 1, end);
+}
+
+// 
+
+int partition1584(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1584(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1584(arr, start, end);
+
+	// Sorting the left part
+	quickSort1584(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1584(arr, p + 1, end);
+}
+
+// 
+
+int partition1585(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1585(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1585(arr, start, end);
+
+	// Sorting the left part
+	quickSort1585(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1585(arr, p + 1, end);
+}
+
+// 
+
+int partition1586(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1586(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1586(arr, start, end);
+
+	// Sorting the left part
+	quickSort1586(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1586(arr, p + 1, end);
+}
+
+// 
+
+int partition1587(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1587(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1587(arr, start, end);
+
+	// Sorting the left part
+	quickSort1587(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1587(arr, p + 1, end);
+}
+
+// 
+
+int partition1588(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1588(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1588(arr, start, end);
+
+	// Sorting the left part
+	quickSort1588(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1588(arr, p + 1, end);
+}
+
+// 
+
+int partition1589(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1589(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1589(arr, start, end);
+
+	// Sorting the left part
+	quickSort1589(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1589(arr, p + 1, end);
+}
+
+// 
+
+int partition1590(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1590(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1590(arr, start, end);
+
+	// Sorting the left part
+	quickSort1590(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1590(arr, p + 1, end);
+}
+
+// 
+
+int partition1591(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1591(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1591(arr, start, end);
+
+	// Sorting the left part
+	quickSort1591(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1591(arr, p + 1, end);
+}
+
+// 
+
+int partition1592(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1592(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1592(arr, start, end);
+
+	// Sorting the left part
+	quickSort1592(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1592(arr, p + 1, end);
+}
+
+// 
+
+int partition1593(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1593(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1593(arr, start, end);
+
+	// Sorting the left part
+	quickSort1593(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1593(arr, p + 1, end);
+}
+
+// 
+
+int partition1594(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1594(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1594(arr, start, end);
+
+	// Sorting the left part
+	quickSort1594(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1594(arr, p + 1, end);
+}
+
+// 
+
+int partition1595(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1595(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1595(arr, start, end);
+
+	// Sorting the left part
+	quickSort1595(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1595(arr, p + 1, end);
+}
+
+// 
+
+int partition1596(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1596(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1596(arr, start, end);
+
+	// Sorting the left part
+	quickSort1596(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1596(arr, p + 1, end);
+}
+
+// 
+
+int partition1597(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1597(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1597(arr, start, end);
+
+	// Sorting the left part
+	quickSort1597(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1597(arr, p + 1, end);
+}
+
+// 
+
+int partition1598(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1598(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1598(arr, start, end);
+
+	// Sorting the left part
+	quickSort1598(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1598(arr, p + 1, end);
+}
+
+// 
+
+int partition1599(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1599(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1599(arr, start, end);
+
+	// Sorting the left part
+	quickSort1599(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1599(arr, p + 1, end);
+}
+
+// 
+
+int partition1600(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1600(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1600(arr, start, end);
+
+	// Sorting the left part
+	quickSort1600(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1600(arr, p + 1, end);
+}
+
+// 
+
+int partition1601(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1601(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1601(arr, start, end);
+
+	// Sorting the left part
+	quickSort1601(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1601(arr, p + 1, end);
+}
+
+// 
+
+int partition1602(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1602(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1602(arr, start, end);
+
+	// Sorting the left part
+	quickSort1602(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1602(arr, p + 1, end);
+}
+
+// 
+
+int partition1603(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1603(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1603(arr, start, end);
+
+	// Sorting the left part
+	quickSort1603(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1603(arr, p + 1, end);
+}
+
+// 
+
+int partition1604(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1604(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1604(arr, start, end);
+
+	// Sorting the left part
+	quickSort1604(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1604(arr, p + 1, end);
+}
+
+// 
+
+int partition1605(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1605(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1605(arr, start, end);
+
+	// Sorting the left part
+	quickSort1605(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1605(arr, p + 1, end);
+}
+
+// 
+
+int partition1606(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1606(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1606(arr, start, end);
+
+	// Sorting the left part
+	quickSort1606(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1606(arr, p + 1, end);
+}
+
+// 
+
+int partition1607(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1607(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1607(arr, start, end);
+
+	// Sorting the left part
+	quickSort1607(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1607(arr, p + 1, end);
+}
+
+// 
+
+int partition1608(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1608(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1608(arr, start, end);
+
+	// Sorting the left part
+	quickSort1608(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1608(arr, p + 1, end);
+}
+
+// 
+
+int partition1609(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1609(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1609(arr, start, end);
+
+	// Sorting the left part
+	quickSort1609(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1609(arr, p + 1, end);
+}
+
+// 
+
+int partition1610(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1610(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1610(arr, start, end);
+
+	// Sorting the left part
+	quickSort1610(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1610(arr, p + 1, end);
+}
+
+// 
+
+int partition1611(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1611(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1611(arr, start, end);
+
+	// Sorting the left part
+	quickSort1611(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1611(arr, p + 1, end);
+}
+
+// 
+
+int partition1612(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1612(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1612(arr, start, end);
+
+	// Sorting the left part
+	quickSort1612(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1612(arr, p + 1, end);
+}
+
+// 
+
+int partition1613(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1613(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1613(arr, start, end);
+
+	// Sorting the left part
+	quickSort1613(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1613(arr, p + 1, end);
+}
+
+// 
+
+int partition1614(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1614(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1614(arr, start, end);
+
+	// Sorting the left part
+	quickSort1614(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1614(arr, p + 1, end);
+}
+
+// 
+
+int partition1615(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1615(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1615(arr, start, end);
+
+	// Sorting the left part
+	quickSort1615(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1615(arr, p + 1, end);
+}
+
+// 
+
+int partition1616(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1616(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1616(arr, start, end);
+
+	// Sorting the left part
+	quickSort1616(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1616(arr, p + 1, end);
+}
+
+// 
+
+int partition1617(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1617(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1617(arr, start, end);
+
+	// Sorting the left part
+	quickSort1617(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1617(arr, p + 1, end);
+}
+
+// 
+
+int partition1618(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1618(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1618(arr, start, end);
+
+	// Sorting the left part
+	quickSort1618(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1618(arr, p + 1, end);
+}
+
+// 
+
+int partition1619(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1619(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1619(arr, start, end);
+
+	// Sorting the left part
+	quickSort1619(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1619(arr, p + 1, end);
+}
+
+// 
+
+int partition1620(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1620(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1620(arr, start, end);
+
+	// Sorting the left part
+	quickSort1620(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1620(arr, p + 1, end);
+}
+
+// 
+
+int partition1621(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1621(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1621(arr, start, end);
+
+	// Sorting the left part
+	quickSort1621(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1621(arr, p + 1, end);
+}
+
+// 
+
+int partition1622(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1622(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1622(arr, start, end);
+
+	// Sorting the left part
+	quickSort1622(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1622(arr, p + 1, end);
+}
+
+// 
+
+int partition1623(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1623(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1623(arr, start, end);
+
+	// Sorting the left part
+	quickSort1623(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1623(arr, p + 1, end);
+}
+
+// 
+
+int partition1624(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1624(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1624(arr, start, end);
+
+	// Sorting the left part
+	quickSort1624(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1624(arr, p + 1, end);
+}
+
+// 
+
+int partition1625(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1625(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1625(arr, start, end);
+
+	// Sorting the left part
+	quickSort1625(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1625(arr, p + 1, end);
+}
+
+// 
+
+int partition1626(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1626(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1626(arr, start, end);
+
+	// Sorting the left part
+	quickSort1626(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1626(arr, p + 1, end);
+}
+
+// 
+
+int partition1627(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1627(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1627(arr, start, end);
+
+	// Sorting the left part
+	quickSort1627(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1627(arr, p + 1, end);
+}
+
+// 
+
+int partition1628(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1628(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1628(arr, start, end);
+
+	// Sorting the left part
+	quickSort1628(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1628(arr, p + 1, end);
+}
+
+// 
+
+int partition1629(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1629(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1629(arr, start, end);
+
+	// Sorting the left part
+	quickSort1629(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1629(arr, p + 1, end);
+}
+
+// 
+
+int partition1630(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1630(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1630(arr, start, end);
+
+	// Sorting the left part
+	quickSort1630(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1630(arr, p + 1, end);
+}
+
+// 
+
+int partition1631(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1631(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1631(arr, start, end);
+
+	// Sorting the left part
+	quickSort1631(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1631(arr, p + 1, end);
+}
+
+// 
+
+int partition1632(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1632(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1632(arr, start, end);
+
+	// Sorting the left part
+	quickSort1632(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1632(arr, p + 1, end);
+}
+
+// 
+
+int partition1633(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1633(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1633(arr, start, end);
+
+	// Sorting the left part
+	quickSort1633(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1633(arr, p + 1, end);
+}
+
+// 
+
+int partition1634(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1634(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1634(arr, start, end);
+
+	// Sorting the left part
+	quickSort1634(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1634(arr, p + 1, end);
+}
+
+// 
+
+int partition1635(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1635(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1635(arr, start, end);
+
+	// Sorting the left part
+	quickSort1635(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1635(arr, p + 1, end);
+}
+
+// 
+
+int partition1636(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1636(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1636(arr, start, end);
+
+	// Sorting the left part
+	quickSort1636(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1636(arr, p + 1, end);
+}
+
+// 
+
+int partition1637(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1637(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1637(arr, start, end);
+
+	// Sorting the left part
+	quickSort1637(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1637(arr, p + 1, end);
+}
+
+// 
+
+int partition1638(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1638(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1638(arr, start, end);
+
+	// Sorting the left part
+	quickSort1638(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1638(arr, p + 1, end);
+}
+
+// 
+
+int partition1639(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1639(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1639(arr, start, end);
+
+	// Sorting the left part
+	quickSort1639(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1639(arr, p + 1, end);
+}
+
+// 
+
+int partition1640(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1640(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1640(arr, start, end);
+
+	// Sorting the left part
+	quickSort1640(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1640(arr, p + 1, end);
+}
+
+// 
+
+int partition1641(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1641(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1641(arr, start, end);
+
+	// Sorting the left part
+	quickSort1641(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1641(arr, p + 1, end);
+}
+
+// 
+
+int partition1642(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1642(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1642(arr, start, end);
+
+	// Sorting the left part
+	quickSort1642(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1642(arr, p + 1, end);
+}
+
+// 
+
+int partition1643(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1643(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1643(arr, start, end);
+
+	// Sorting the left part
+	quickSort1643(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1643(arr, p + 1, end);
+}
+
+// 
+
+int partition1644(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1644(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1644(arr, start, end);
+
+	// Sorting the left part
+	quickSort1644(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1644(arr, p + 1, end);
+}
+
+// 
+
+int partition1645(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1645(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1645(arr, start, end);
+
+	// Sorting the left part
+	quickSort1645(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1645(arr, p + 1, end);
+}
+
+// 
+
+int partition1646(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1646(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1646(arr, start, end);
+
+	// Sorting the left part
+	quickSort1646(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1646(arr, p + 1, end);
+}
+
+// 
+
+int partition1647(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1647(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1647(arr, start, end);
+
+	// Sorting the left part
+	quickSort1647(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1647(arr, p + 1, end);
+}
+
+// 
+
+int partition1648(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1648(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1648(arr, start, end);
+
+	// Sorting the left part
+	quickSort1648(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1648(arr, p + 1, end);
+}
+
+// 
+
+int partition1649(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1649(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1649(arr, start, end);
+
+	// Sorting the left part
+	quickSort1649(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1649(arr, p + 1, end);
+}
+
+// 
+
+int partition1650(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1650(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1650(arr, start, end);
+
+	// Sorting the left part
+	quickSort1650(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1650(arr, p + 1, end);
+}
+
+// 
+
+int partition1651(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1651(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1651(arr, start, end);
+
+	// Sorting the left part
+	quickSort1651(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1651(arr, p + 1, end);
+}
+
+// 
+
+int partition1652(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1652(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1652(arr, start, end);
+
+	// Sorting the left part
+	quickSort1652(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1652(arr, p + 1, end);
+}
+
+// 
+
+int partition1653(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1653(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1653(arr, start, end);
+
+	// Sorting the left part
+	quickSort1653(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1653(arr, p + 1, end);
+}
+
+// 
+
+int partition1654(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1654(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1654(arr, start, end);
+
+	// Sorting the left part
+	quickSort1654(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1654(arr, p + 1, end);
+}
+
+// 
+
+int partition1655(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1655(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1655(arr, start, end);
+
+	// Sorting the left part
+	quickSort1655(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1655(arr, p + 1, end);
+}
+
+// 
+
+int partition1656(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1656(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1656(arr, start, end);
+
+	// Sorting the left part
+	quickSort1656(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1656(arr, p + 1, end);
+}
+
+// 
+
+int partition1657(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1657(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1657(arr, start, end);
+
+	// Sorting the left part
+	quickSort1657(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1657(arr, p + 1, end);
+}
+
+// 
+
+int partition1658(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1658(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1658(arr, start, end);
+
+	// Sorting the left part
+	quickSort1658(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1658(arr, p + 1, end);
+}
+
+// 
+
+int partition1659(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1659(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1659(arr, start, end);
+
+	// Sorting the left part
+	quickSort1659(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1659(arr, p + 1, end);
+}
+
+// 
+
+int partition1660(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1660(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1660(arr, start, end);
+
+	// Sorting the left part
+	quickSort1660(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1660(arr, p + 1, end);
+}
+
+// 
+
+int partition1661(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1661(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1661(arr, start, end);
+
+	// Sorting the left part
+	quickSort1661(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1661(arr, p + 1, end);
+}
+
+// 
+
+int partition1662(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1662(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1662(arr, start, end);
+
+	// Sorting the left part
+	quickSort1662(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1662(arr, p + 1, end);
+}
+
+// 
+
+int partition1663(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1663(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1663(arr, start, end);
+
+	// Sorting the left part
+	quickSort1663(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1663(arr, p + 1, end);
+}
+
+// 
+
+int partition1664(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1664(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1664(arr, start, end);
+
+	// Sorting the left part
+	quickSort1664(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1664(arr, p + 1, end);
+}
+
+// 
+
+int partition1665(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1665(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1665(arr, start, end);
+
+	// Sorting the left part
+	quickSort1665(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1665(arr, p + 1, end);
+}
+
+// 
+
+int partition1666(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1666(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1666(arr, start, end);
+
+	// Sorting the left part
+	quickSort1666(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1666(arr, p + 1, end);
+}
+
+// 
+
+int partition1667(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1667(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1667(arr, start, end);
+
+	// Sorting the left part
+	quickSort1667(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1667(arr, p + 1, end);
+}
+
+// 
+
+int partition1668(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1668(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1668(arr, start, end);
+
+	// Sorting the left part
+	quickSort1668(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1668(arr, p + 1, end);
+}
+
+// 
+
+int partition1669(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1669(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1669(arr, start, end);
+
+	// Sorting the left part
+	quickSort1669(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1669(arr, p + 1, end);
+}
+
+// 
+
+int partition1670(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1670(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1670(arr, start, end);
+
+	// Sorting the left part
+	quickSort1670(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1670(arr, p + 1, end);
+}
+
+// 
+
+int partition1671(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1671(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1671(arr, start, end);
+
+	// Sorting the left part
+	quickSort1671(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1671(arr, p + 1, end);
+}
+
+// 
+
+int partition1672(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1672(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1672(arr, start, end);
+
+	// Sorting the left part
+	quickSort1672(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1672(arr, p + 1, end);
+}
+
+// 
+
+int partition1673(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1673(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1673(arr, start, end);
+
+	// Sorting the left part
+	quickSort1673(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1673(arr, p + 1, end);
+}
+
+// 
+
+int partition1674(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1674(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1674(arr, start, end);
+
+	// Sorting the left part
+	quickSort1674(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1674(arr, p + 1, end);
+}
+
+// 
+
+int partition1675(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1675(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1675(arr, start, end);
+
+	// Sorting the left part
+	quickSort1675(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1675(arr, p + 1, end);
+}
+
+// 
+
+int partition1676(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1676(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1676(arr, start, end);
+
+	// Sorting the left part
+	quickSort1676(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1676(arr, p + 1, end);
+}
+
+// 
+
+int partition1677(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1677(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1677(arr, start, end);
+
+	// Sorting the left part
+	quickSort1677(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1677(arr, p + 1, end);
+}
+
+// 
+
+int partition1678(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1678(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1678(arr, start, end);
+
+	// Sorting the left part
+	quickSort1678(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1678(arr, p + 1, end);
+}
+
+// 
+
+int partition1679(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1679(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1679(arr, start, end);
+
+	// Sorting the left part
+	quickSort1679(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1679(arr, p + 1, end);
+}
+
+// 
+
+int partition1680(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1680(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1680(arr, start, end);
+
+	// Sorting the left part
+	quickSort1680(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1680(arr, p + 1, end);
+}
+
+// 
+
+int partition1681(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1681(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1681(arr, start, end);
+
+	// Sorting the left part
+	quickSort1681(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1681(arr, p + 1, end);
+}
+
+// 
+
+int partition1682(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1682(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1682(arr, start, end);
+
+	// Sorting the left part
+	quickSort1682(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1682(arr, p + 1, end);
+}
+
+// 
+
+int partition1683(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1683(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1683(arr, start, end);
+
+	// Sorting the left part
+	quickSort1683(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1683(arr, p + 1, end);
+}
+
+// 
+
+int partition1684(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1684(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1684(arr, start, end);
+
+	// Sorting the left part
+	quickSort1684(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1684(arr, p + 1, end);
+}
+
+// 
+
+int partition1685(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1685(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1685(arr, start, end);
+
+	// Sorting the left part
+	quickSort1685(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1685(arr, p + 1, end);
+}
+
+// 
+
+int partition1686(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1686(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1686(arr, start, end);
+
+	// Sorting the left part
+	quickSort1686(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1686(arr, p + 1, end);
+}
+
+// 
+
+int partition1687(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1687(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1687(arr, start, end);
+
+	// Sorting the left part
+	quickSort1687(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1687(arr, p + 1, end);
+}
+
+// 
+
+int partition1688(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1688(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1688(arr, start, end);
+
+	// Sorting the left part
+	quickSort1688(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1688(arr, p + 1, end);
+}
+
+// 
+
+int partition1689(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1689(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1689(arr, start, end);
+
+	// Sorting the left part
+	quickSort1689(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1689(arr, p + 1, end);
+}
+
+// 
+
+int partition1690(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1690(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1690(arr, start, end);
+
+	// Sorting the left part
+	quickSort1690(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1690(arr, p + 1, end);
+}
+
+// 
+
+int partition1691(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1691(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1691(arr, start, end);
+
+	// Sorting the left part
+	quickSort1691(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1691(arr, p + 1, end);
+}
+
+// 
+
+int partition1692(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1692(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1692(arr, start, end);
+
+	// Sorting the left part
+	quickSort1692(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1692(arr, p + 1, end);
+}
+
+// 
+
+int partition1693(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1693(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1693(arr, start, end);
+
+	// Sorting the left part
+	quickSort1693(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1693(arr, p + 1, end);
+}
+
+// 
+
+int partition1694(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1694(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1694(arr, start, end);
+
+	// Sorting the left part
+	quickSort1694(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1694(arr, p + 1, end);
+}
+
+// 
+
+int partition1695(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1695(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1695(arr, start, end);
+
+	// Sorting the left part
+	quickSort1695(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1695(arr, p + 1, end);
+}
+
+// 
+
+int partition1696(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1696(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1696(arr, start, end);
+
+	// Sorting the left part
+	quickSort1696(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1696(arr, p + 1, end);
+}
+
+// 
+
+int partition1697(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1697(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1697(arr, start, end);
+
+	// Sorting the left part
+	quickSort1697(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1697(arr, p + 1, end);
+}
+
+// 
+
+int partition1698(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1698(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1698(arr, start, end);
+
+	// Sorting the left part
+	quickSort1698(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1698(arr, p + 1, end);
+}
+
+// 
+
+int partition1699(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1699(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1699(arr, start, end);
+
+	// Sorting the left part
+	quickSort1699(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1699(arr, p + 1, end);
+}
+
+// 
+
+int partition1700(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1700(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1700(arr, start, end);
+
+	// Sorting the left part
+	quickSort1700(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1700(arr, p + 1, end);
+}
+
+// 
+
+int partition1701(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1701(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1701(arr, start, end);
+
+	// Sorting the left part
+	quickSort1701(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1701(arr, p + 1, end);
+}
+
+// 
+
+int partition1702(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1702(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1702(arr, start, end);
+
+	// Sorting the left part
+	quickSort1702(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1702(arr, p + 1, end);
+}
+
+// 
+
+int partition1703(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1703(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1703(arr, start, end);
+
+	// Sorting the left part
+	quickSort1703(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1703(arr, p + 1, end);
+}
+
+// 
+
+int partition1704(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1704(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1704(arr, start, end);
+
+	// Sorting the left part
+	quickSort1704(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1704(arr, p + 1, end);
+}
+
+// 
+
+int partition1705(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1705(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1705(arr, start, end);
+
+	// Sorting the left part
+	quickSort1705(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1705(arr, p + 1, end);
+}
+
+// 
+
+int partition1706(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1706(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1706(arr, start, end);
+
+	// Sorting the left part
+	quickSort1706(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1706(arr, p + 1, end);
+}
+
+// 
+
+int partition1707(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1707(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1707(arr, start, end);
+
+	// Sorting the left part
+	quickSort1707(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1707(arr, p + 1, end);
+}
+
+// 
+
+int partition1708(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1708(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1708(arr, start, end);
+
+	// Sorting the left part
+	quickSort1708(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1708(arr, p + 1, end);
+}
+
+// 
+
+int partition1709(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1709(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1709(arr, start, end);
+
+	// Sorting the left part
+	quickSort1709(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1709(arr, p + 1, end);
+}
+
+// 
+
+int partition1710(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1710(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1710(arr, start, end);
+
+	// Sorting the left part
+	quickSort1710(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1710(arr, p + 1, end);
+}
+
+// 
+
+int partition1711(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1711(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1711(arr, start, end);
+
+	// Sorting the left part
+	quickSort1711(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1711(arr, p + 1, end);
+}
+
+// 
+
+int partition1712(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1712(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1712(arr, start, end);
+
+	// Sorting the left part
+	quickSort1712(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1712(arr, p + 1, end);
+}
+
+// 
+
+int partition1713(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1713(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1713(arr, start, end);
+
+	// Sorting the left part
+	quickSort1713(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1713(arr, p + 1, end);
+}
+
+// 
+
+int partition1714(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1714(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1714(arr, start, end);
+
+	// Sorting the left part
+	quickSort1714(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1714(arr, p + 1, end);
+}
+
+// 
+
+int partition1715(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1715(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1715(arr, start, end);
+
+	// Sorting the left part
+	quickSort1715(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1715(arr, p + 1, end);
+}
+
+// 
+
+int partition1716(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1716(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1716(arr, start, end);
+
+	// Sorting the left part
+	quickSort1716(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1716(arr, p + 1, end);
+}
+
+// 
+
+int partition1717(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1717(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1717(arr, start, end);
+
+	// Sorting the left part
+	quickSort1717(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1717(arr, p + 1, end);
+}
+
+// 
+
+int partition1718(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1718(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1718(arr, start, end);
+
+	// Sorting the left part
+	quickSort1718(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1718(arr, p + 1, end);
+}
+
+// 
+
+int partition1719(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1719(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1719(arr, start, end);
+
+	// Sorting the left part
+	quickSort1719(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1719(arr, p + 1, end);
+}
+
+// 
+
+int partition1720(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1720(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1720(arr, start, end);
+
+	// Sorting the left part
+	quickSort1720(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1720(arr, p + 1, end);
+}
+
+// 
+
+int partition1721(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1721(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1721(arr, start, end);
+
+	// Sorting the left part
+	quickSort1721(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1721(arr, p + 1, end);
+}
+
+// 
+
+int partition1722(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1722(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1722(arr, start, end);
+
+	// Sorting the left part
+	quickSort1722(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1722(arr, p + 1, end);
+}
+
+// 
+
+int partition1723(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1723(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1723(arr, start, end);
+
+	// Sorting the left part
+	quickSort1723(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1723(arr, p + 1, end);
+}
+
+// 
+
+int partition1724(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1724(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1724(arr, start, end);
+
+	// Sorting the left part
+	quickSort1724(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1724(arr, p + 1, end);
+}
+
+// 
+
+int partition1725(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1725(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1725(arr, start, end);
+
+	// Sorting the left part
+	quickSort1725(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1725(arr, p + 1, end);
+}
+
+// 
+
+int partition1726(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1726(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1726(arr, start, end);
+
+	// Sorting the left part
+	quickSort1726(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1726(arr, p + 1, end);
+}
+
+// 
+
+int partition1727(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1727(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1727(arr, start, end);
+
+	// Sorting the left part
+	quickSort1727(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1727(arr, p + 1, end);
+}
+
+// 
+
+int partition1728(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1728(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1728(arr, start, end);
+
+	// Sorting the left part
+	quickSort1728(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1728(arr, p + 1, end);
+}
+
+// 
+
+int partition1729(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1729(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1729(arr, start, end);
+
+	// Sorting the left part
+	quickSort1729(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1729(arr, p + 1, end);
+}
+
+// 
+
+int partition1730(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1730(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1730(arr, start, end);
+
+	// Sorting the left part
+	quickSort1730(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1730(arr, p + 1, end);
+}
+
+// 
+
+int partition1731(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1731(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1731(arr, start, end);
+
+	// Sorting the left part
+	quickSort1731(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1731(arr, p + 1, end);
+}
+
+// 
+
+int partition1732(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1732(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1732(arr, start, end);
+
+	// Sorting the left part
+	quickSort1732(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1732(arr, p + 1, end);
+}
+
+// 
+
+int partition1733(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1733(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1733(arr, start, end);
+
+	// Sorting the left part
+	quickSort1733(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1733(arr, p + 1, end);
+}
+
+// 
+
+int partition1734(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1734(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1734(arr, start, end);
+
+	// Sorting the left part
+	quickSort1734(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1734(arr, p + 1, end);
+}
+
+// 
+
+int partition1735(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1735(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1735(arr, start, end);
+
+	// Sorting the left part
+	quickSort1735(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1735(arr, p + 1, end);
+}
+
+// 
+
+int partition1736(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1736(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1736(arr, start, end);
+
+	// Sorting the left part
+	quickSort1736(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1736(arr, p + 1, end);
+}
+
+// 
+
+int partition1737(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1737(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1737(arr, start, end);
+
+	// Sorting the left part
+	quickSort1737(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1737(arr, p + 1, end);
+}
+
+// 
+
+int partition1738(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1738(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1738(arr, start, end);
+
+	// Sorting the left part
+	quickSort1738(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1738(arr, p + 1, end);
+}
+
+// 
+
+int partition1739(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1739(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1739(arr, start, end);
+
+	// Sorting the left part
+	quickSort1739(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1739(arr, p + 1, end);
+}
+
+// 
+
+int partition1740(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1740(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1740(arr, start, end);
+
+	// Sorting the left part
+	quickSort1740(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1740(arr, p + 1, end);
+}
+
+// 
+
+int partition1741(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1741(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1741(arr, start, end);
+
+	// Sorting the left part
+	quickSort1741(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1741(arr, p + 1, end);
+}
+
+// 
+
+int partition1742(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1742(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1742(arr, start, end);
+
+	// Sorting the left part
+	quickSort1742(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1742(arr, p + 1, end);
+}
+
+// 
+
+int partition1743(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1743(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1743(arr, start, end);
+
+	// Sorting the left part
+	quickSort1743(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1743(arr, p + 1, end);
+}
+
+// 
+
+int partition1744(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1744(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1744(arr, start, end);
+
+	// Sorting the left part
+	quickSort1744(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1744(arr, p + 1, end);
+}
+
+// 
+
+int partition1745(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1745(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1745(arr, start, end);
+
+	// Sorting the left part
+	quickSort1745(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1745(arr, p + 1, end);
+}
+
+// 
+
+int partition1746(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1746(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1746(arr, start, end);
+
+	// Sorting the left part
+	quickSort1746(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1746(arr, p + 1, end);
+}
+
+// 
+
+int partition1747(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1747(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1747(arr, start, end);
+
+	// Sorting the left part
+	quickSort1747(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1747(arr, p + 1, end);
+}
+
+// 
+
+int partition1748(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1748(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1748(arr, start, end);
+
+	// Sorting the left part
+	quickSort1748(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1748(arr, p + 1, end);
+}
+
+// 
+
+int partition1749(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1749(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1749(arr, start, end);
+
+	// Sorting the left part
+	quickSort1749(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1749(arr, p + 1, end);
+}
+
+// 
+
+int partition1750(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1750(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1750(arr, start, end);
+
+	// Sorting the left part
+	quickSort1750(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1750(arr, p + 1, end);
+}
+
+// 
+
+int partition1751(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1751(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1751(arr, start, end);
+
+	// Sorting the left part
+	quickSort1751(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1751(arr, p + 1, end);
+}
+
+// 
+
+int partition1752(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1752(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1752(arr, start, end);
+
+	// Sorting the left part
+	quickSort1752(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1752(arr, p + 1, end);
+}
+
+// 
+
+int partition1753(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1753(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1753(arr, start, end);
+
+	// Sorting the left part
+	quickSort1753(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1753(arr, p + 1, end);
+}
+
+// 
+
+int partition1754(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1754(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1754(arr, start, end);
+
+	// Sorting the left part
+	quickSort1754(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1754(arr, p + 1, end);
+}
+
+// 
+
+int partition1755(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1755(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1755(arr, start, end);
+
+	// Sorting the left part
+	quickSort1755(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1755(arr, p + 1, end);
+}
+
+// 
+
+int partition1756(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1756(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1756(arr, start, end);
+
+	// Sorting the left part
+	quickSort1756(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1756(arr, p + 1, end);
+}
+
+// 
+
+int partition1757(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1757(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1757(arr, start, end);
+
+	// Sorting the left part
+	quickSort1757(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1757(arr, p + 1, end);
+}
+
+// 
+
+int partition1758(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1758(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1758(arr, start, end);
+
+	// Sorting the left part
+	quickSort1758(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1758(arr, p + 1, end);
+}
+
+// 
+
+int partition1759(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1759(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1759(arr, start, end);
+
+	// Sorting the left part
+	quickSort1759(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1759(arr, p + 1, end);
+}
+
+// 
+
+int partition1760(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1760(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1760(arr, start, end);
+
+	// Sorting the left part
+	quickSort1760(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1760(arr, p + 1, end);
+}
+
+// 
+
+int partition1761(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1761(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1761(arr, start, end);
+
+	// Sorting the left part
+	quickSort1761(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1761(arr, p + 1, end);
+}
+
+// 
+
+int partition1762(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1762(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1762(arr, start, end);
+
+	// Sorting the left part
+	quickSort1762(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1762(arr, p + 1, end);
+}
+
+// 
+
+int partition1763(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1763(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1763(arr, start, end);
+
+	// Sorting the left part
+	quickSort1763(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1763(arr, p + 1, end);
+}
+
+// 
+
+int partition1764(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1764(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1764(arr, start, end);
+
+	// Sorting the left part
+	quickSort1764(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1764(arr, p + 1, end);
+}
+
+// 
+
+int partition1765(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1765(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1765(arr, start, end);
+
+	// Sorting the left part
+	quickSort1765(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1765(arr, p + 1, end);
+}
+
+// 
+
+int partition1766(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1766(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1766(arr, start, end);
+
+	// Sorting the left part
+	quickSort1766(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1766(arr, p + 1, end);
+}
+
+// 
+
+int partition1767(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1767(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1767(arr, start, end);
+
+	// Sorting the left part
+	quickSort1767(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1767(arr, p + 1, end);
+}
+
+// 
+
+int partition1768(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1768(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1768(arr, start, end);
+
+	// Sorting the left part
+	quickSort1768(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1768(arr, p + 1, end);
+}
+
+// 
+
+int partition1769(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1769(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1769(arr, start, end);
+
+	// Sorting the left part
+	quickSort1769(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1769(arr, p + 1, end);
+}
+
+// 
+
+int partition1770(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1770(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1770(arr, start, end);
+
+	// Sorting the left part
+	quickSort1770(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1770(arr, p + 1, end);
+}
+
+// 
+
+int partition1771(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1771(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1771(arr, start, end);
+
+	// Sorting the left part
+	quickSort1771(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1771(arr, p + 1, end);
+}
+
+// 
+
+int partition1772(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1772(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1772(arr, start, end);
+
+	// Sorting the left part
+	quickSort1772(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1772(arr, p + 1, end);
+}
+
+// 
+
+int partition1773(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1773(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1773(arr, start, end);
+
+	// Sorting the left part
+	quickSort1773(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1773(arr, p + 1, end);
+}
+
+// 
+
+int partition1774(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1774(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1774(arr, start, end);
+
+	// Sorting the left part
+	quickSort1774(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1774(arr, p + 1, end);
+}
+
+// 
+
+int partition1775(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1775(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1775(arr, start, end);
+
+	// Sorting the left part
+	quickSort1775(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1775(arr, p + 1, end);
+}
+
+// 
+
+int partition1776(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1776(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1776(arr, start, end);
+
+	// Sorting the left part
+	quickSort1776(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1776(arr, p + 1, end);
+}
+
+// 
+
+int partition1777(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1777(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1777(arr, start, end);
+
+	// Sorting the left part
+	quickSort1777(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1777(arr, p + 1, end);
+}
+
+// 
+
+int partition1778(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1778(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1778(arr, start, end);
+
+	// Sorting the left part
+	quickSort1778(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1778(arr, p + 1, end);
+}
+
+// 
+
+int partition1779(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1779(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1779(arr, start, end);
+
+	// Sorting the left part
+	quickSort1779(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1779(arr, p + 1, end);
+}
+
+// 
+
+int partition1780(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1780(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1780(arr, start, end);
+
+	// Sorting the left part
+	quickSort1780(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1780(arr, p + 1, end);
+}
+
+// 
+
+int partition1781(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1781(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1781(arr, start, end);
+
+	// Sorting the left part
+	quickSort1781(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1781(arr, p + 1, end);
+}
+
+// 
+
+int partition1782(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1782(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1782(arr, start, end);
+
+	// Sorting the left part
+	quickSort1782(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1782(arr, p + 1, end);
+}
+
+// 
+
+int partition1783(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1783(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1783(arr, start, end);
+
+	// Sorting the left part
+	quickSort1783(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1783(arr, p + 1, end);
+}
+
+// 
+
+int partition1784(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1784(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1784(arr, start, end);
+
+	// Sorting the left part
+	quickSort1784(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1784(arr, p + 1, end);
+}
+
+// 
+
+int partition1785(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1785(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1785(arr, start, end);
+
+	// Sorting the left part
+	quickSort1785(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1785(arr, p + 1, end);
+}
+
+// 
+
+int partition1786(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1786(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1786(arr, start, end);
+
+	// Sorting the left part
+	quickSort1786(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1786(arr, p + 1, end);
+}
+
+// 
+
+int partition1787(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1787(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1787(arr, start, end);
+
+	// Sorting the left part
+	quickSort1787(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1787(arr, p + 1, end);
+}
+
+// 
+
+int partition1788(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1788(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1788(arr, start, end);
+
+	// Sorting the left part
+	quickSort1788(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1788(arr, p + 1, end);
+}
+
+// 
+
+int partition1789(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1789(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1789(arr, start, end);
+
+	// Sorting the left part
+	quickSort1789(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1789(arr, p + 1, end);
+}
+
+// 
+
+int partition1790(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1790(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1790(arr, start, end);
+
+	// Sorting the left part
+	quickSort1790(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1790(arr, p + 1, end);
+}
+
+// 
+
+int partition1791(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1791(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1791(arr, start, end);
+
+	// Sorting the left part
+	quickSort1791(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1791(arr, p + 1, end);
+}
+
+// 
+
+int partition1792(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1792(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1792(arr, start, end);
+
+	// Sorting the left part
+	quickSort1792(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1792(arr, p + 1, end);
+}
+
+// 
+
+int partition1793(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1793(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1793(arr, start, end);
+
+	// Sorting the left part
+	quickSort1793(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1793(arr, p + 1, end);
+}
+
+// 
+
+int partition1794(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1794(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1794(arr, start, end);
+
+	// Sorting the left part
+	quickSort1794(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1794(arr, p + 1, end);
+}
+
+// 
+
+int partition1795(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1795(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1795(arr, start, end);
+
+	// Sorting the left part
+	quickSort1795(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1795(arr, p + 1, end);
+}
+
+// 
+
+int partition1796(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1796(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1796(arr, start, end);
+
+	// Sorting the left part
+	quickSort1796(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1796(arr, p + 1, end);
+}
+
+// 
+
+int partition1797(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1797(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1797(arr, start, end);
+
+	// Sorting the left part
+	quickSort1797(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1797(arr, p + 1, end);
+}
+
+// 
+
+int partition1798(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1798(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1798(arr, start, end);
+
+	// Sorting the left part
+	quickSort1798(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1798(arr, p + 1, end);
+}
+
+// 
+
+int partition1799(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1799(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1799(arr, start, end);
+
+	// Sorting the left part
+	quickSort1799(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1799(arr, p + 1, end);
+}
+
+// 
+
+int partition1800(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1800(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1800(arr, start, end);
+
+	// Sorting the left part
+	quickSort1800(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1800(arr, p + 1, end);
+}
+
+// 
+
+int partition1801(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1801(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1801(arr, start, end);
+
+	// Sorting the left part
+	quickSort1801(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1801(arr, p + 1, end);
+}
+
+// 
+
+int partition1802(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1802(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1802(arr, start, end);
+
+	// Sorting the left part
+	quickSort1802(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1802(arr, p + 1, end);
+}
+
+// 
+
+int partition1803(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1803(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1803(arr, start, end);
+
+	// Sorting the left part
+	quickSort1803(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1803(arr, p + 1, end);
+}
+
+// 
+
+int partition1804(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1804(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1804(arr, start, end);
+
+	// Sorting the left part
+	quickSort1804(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1804(arr, p + 1, end);
+}
+
+// 
+
+int partition1805(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1805(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1805(arr, start, end);
+
+	// Sorting the left part
+	quickSort1805(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1805(arr, p + 1, end);
+}
+
+// 
+
+int partition1806(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1806(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1806(arr, start, end);
+
+	// Sorting the left part
+	quickSort1806(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1806(arr, p + 1, end);
+}
+
+// 
+
+int partition1807(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1807(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1807(arr, start, end);
+
+	// Sorting the left part
+	quickSort1807(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1807(arr, p + 1, end);
+}
+
+// 
+
+int partition1808(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1808(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1808(arr, start, end);
+
+	// Sorting the left part
+	quickSort1808(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1808(arr, p + 1, end);
+}
+
+// 
+
+int partition1809(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1809(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1809(arr, start, end);
+
+	// Sorting the left part
+	quickSort1809(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1809(arr, p + 1, end);
+}
+
+// 
+
+int partition1810(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1810(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1810(arr, start, end);
+
+	// Sorting the left part
+	quickSort1810(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1810(arr, p + 1, end);
+}
+
+// 
+
+int partition1811(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1811(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1811(arr, start, end);
+
+	// Sorting the left part
+	quickSort1811(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1811(arr, p + 1, end);
+}
+
+// 
+
+int partition1812(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1812(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1812(arr, start, end);
+
+	// Sorting the left part
+	quickSort1812(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1812(arr, p + 1, end);
+}
+
+// 
+
+int partition1813(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1813(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1813(arr, start, end);
+
+	// Sorting the left part
+	quickSort1813(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1813(arr, p + 1, end);
+}
+
+// 
+
+int partition1814(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1814(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1814(arr, start, end);
+
+	// Sorting the left part
+	quickSort1814(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1814(arr, p + 1, end);
+}
+
+// 
+
+int partition1815(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1815(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1815(arr, start, end);
+
+	// Sorting the left part
+	quickSort1815(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1815(arr, p + 1, end);
+}
+
+// 
+
+int partition1816(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1816(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1816(arr, start, end);
+
+	// Sorting the left part
+	quickSort1816(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1816(arr, p + 1, end);
+}
+
+// 
+
+int partition1817(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1817(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1817(arr, start, end);
+
+	// Sorting the left part
+	quickSort1817(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1817(arr, p + 1, end);
+}
+
+// 
+
+int partition1818(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1818(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1818(arr, start, end);
+
+	// Sorting the left part
+	quickSort1818(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1818(arr, p + 1, end);
+}
+
+// 
+
+int partition1819(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1819(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1819(arr, start, end);
+
+	// Sorting the left part
+	quickSort1819(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1819(arr, p + 1, end);
+}
+
+// 
+
+int partition1820(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1820(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1820(arr, start, end);
+
+	// Sorting the left part
+	quickSort1820(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1820(arr, p + 1, end);
+}
+
+// 
+
+int partition1821(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1821(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1821(arr, start, end);
+
+	// Sorting the left part
+	quickSort1821(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1821(arr, p + 1, end);
+}
+
+// 
+
+int partition1822(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1822(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1822(arr, start, end);
+
+	// Sorting the left part
+	quickSort1822(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1822(arr, p + 1, end);
+}
+
+// 
+
+int partition1823(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1823(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1823(arr, start, end);
+
+	// Sorting the left part
+	quickSort1823(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1823(arr, p + 1, end);
+}
+
+// 
+
+int partition1824(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1824(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1824(arr, start, end);
+
+	// Sorting the left part
+	quickSort1824(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1824(arr, p + 1, end);
+}
+
+// 
+
+int partition1825(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1825(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1825(arr, start, end);
+
+	// Sorting the left part
+	quickSort1825(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1825(arr, p + 1, end);
+}
+
+// 
+
+int partition1826(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1826(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1826(arr, start, end);
+
+	// Sorting the left part
+	quickSort1826(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1826(arr, p + 1, end);
+}
+
+// 
+
+int partition1827(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1827(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1827(arr, start, end);
+
+	// Sorting the left part
+	quickSort1827(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1827(arr, p + 1, end);
+}
+
+// 
+
+int partition1828(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1828(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1828(arr, start, end);
+
+	// Sorting the left part
+	quickSort1828(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1828(arr, p + 1, end);
+}
+
+// 
+
+int partition1829(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1829(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1829(arr, start, end);
+
+	// Sorting the left part
+	quickSort1829(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1829(arr, p + 1, end);
+}
+
+// 
+
+int partition1830(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1830(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1830(arr, start, end);
+
+	// Sorting the left part
+	quickSort1830(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1830(arr, p + 1, end);
+}
+
+// 
+
+int partition1831(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1831(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1831(arr, start, end);
+
+	// Sorting the left part
+	quickSort1831(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1831(arr, p + 1, end);
+}
+
+// 
+
+int partition1832(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1832(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1832(arr, start, end);
+
+	// Sorting the left part
+	quickSort1832(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1832(arr, p + 1, end);
+}
+
+// 
+
+int partition1833(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1833(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1833(arr, start, end);
+
+	// Sorting the left part
+	quickSort1833(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1833(arr, p + 1, end);
+}
+
+// 
+
+int partition1834(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1834(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1834(arr, start, end);
+
+	// Sorting the left part
+	quickSort1834(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1834(arr, p + 1, end);
+}
+
+// 
+
+int partition1835(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1835(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1835(arr, start, end);
+
+	// Sorting the left part
+	quickSort1835(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1835(arr, p + 1, end);
+}
+
+// 
+
+int partition1836(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1836(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1836(arr, start, end);
+
+	// Sorting the left part
+	quickSort1836(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1836(arr, p + 1, end);
+}
+
+// 
+
+int partition1837(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1837(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1837(arr, start, end);
+
+	// Sorting the left part
+	quickSort1837(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1837(arr, p + 1, end);
+}
+
+// 
+
+int partition1838(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1838(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1838(arr, start, end);
+
+	// Sorting the left part
+	quickSort1838(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1838(arr, p + 1, end);
+}
+
+// 
+
+int partition1839(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1839(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1839(arr, start, end);
+
+	// Sorting the left part
+	quickSort1839(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1839(arr, p + 1, end);
+}
+
+// 
+
+int partition1840(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1840(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1840(arr, start, end);
+
+	// Sorting the left part
+	quickSort1840(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1840(arr, p + 1, end);
+}
+
+// 
+
+int partition1841(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1841(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1841(arr, start, end);
+
+	// Sorting the left part
+	quickSort1841(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1841(arr, p + 1, end);
+}
+
+// 
+
+int partition1842(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1842(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1842(arr, start, end);
+
+	// Sorting the left part
+	quickSort1842(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1842(arr, p + 1, end);
+}
+
+// 
+
+int partition1843(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1843(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1843(arr, start, end);
+
+	// Sorting the left part
+	quickSort1843(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1843(arr, p + 1, end);
+}
+
+// 
+
+int partition1844(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1844(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1844(arr, start, end);
+
+	// Sorting the left part
+	quickSort1844(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1844(arr, p + 1, end);
+}
+
+// 
+
+int partition1845(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1845(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1845(arr, start, end);
+
+	// Sorting the left part
+	quickSort1845(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1845(arr, p + 1, end);
+}
+
+// 
+
+int partition1846(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1846(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1846(arr, start, end);
+
+	// Sorting the left part
+	quickSort1846(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1846(arr, p + 1, end);
+}
+
+// 
+
+int partition1847(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1847(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1847(arr, start, end);
+
+	// Sorting the left part
+	quickSort1847(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1847(arr, p + 1, end);
+}
+
+// 
+
+int partition1848(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1848(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1848(arr, start, end);
+
+	// Sorting the left part
+	quickSort1848(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1848(arr, p + 1, end);
+}
+
+// 
+
+int partition1849(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1849(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1849(arr, start, end);
+
+	// Sorting the left part
+	quickSort1849(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1849(arr, p + 1, end);
+}
+
+// 
+
+int partition1850(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1850(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1850(arr, start, end);
+
+	// Sorting the left part
+	quickSort1850(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1850(arr, p + 1, end);
+}
+
+// 
+
+int partition1851(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1851(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1851(arr, start, end);
+
+	// Sorting the left part
+	quickSort1851(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1851(arr, p + 1, end);
+}
+
+// 
+
+int partition1852(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1852(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1852(arr, start, end);
+
+	// Sorting the left part
+	quickSort1852(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1852(arr, p + 1, end);
+}
+
+// 
+
+int partition1853(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1853(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1853(arr, start, end);
+
+	// Sorting the left part
+	quickSort1853(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1853(arr, p + 1, end);
+}
+
+// 
+
+int partition1854(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1854(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1854(arr, start, end);
+
+	// Sorting the left part
+	quickSort1854(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1854(arr, p + 1, end);
+}
+
+// 
+
+int partition1855(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1855(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1855(arr, start, end);
+
+	// Sorting the left part
+	quickSort1855(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1855(arr, p + 1, end);
+}
+
+// 
+
+int partition1856(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1856(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1856(arr, start, end);
+
+	// Sorting the left part
+	quickSort1856(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1856(arr, p + 1, end);
+}
+
+// 
+
+int partition1857(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1857(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1857(arr, start, end);
+
+	// Sorting the left part
+	quickSort1857(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1857(arr, p + 1, end);
+}
+
+// 
+
+int partition1858(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1858(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1858(arr, start, end);
+
+	// Sorting the left part
+	quickSort1858(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1858(arr, p + 1, end);
+}
+
+// 
+
+int partition1859(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1859(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1859(arr, start, end);
+
+	// Sorting the left part
+	quickSort1859(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1859(arr, p + 1, end);
+}
+
+// 
+
+int partition1860(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1860(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1860(arr, start, end);
+
+	// Sorting the left part
+	quickSort1860(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1860(arr, p + 1, end);
+}
+
+// 
+
+int partition1861(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1861(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1861(arr, start, end);
+
+	// Sorting the left part
+	quickSort1861(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1861(arr, p + 1, end);
+}
+
+// 
+
+int partition1862(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1862(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1862(arr, start, end);
+
+	// Sorting the left part
+	quickSort1862(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1862(arr, p + 1, end);
+}
+
+// 
+
+int partition1863(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1863(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1863(arr, start, end);
+
+	// Sorting the left part
+	quickSort1863(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1863(arr, p + 1, end);
+}
+
+// 
+
+int partition1864(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1864(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1864(arr, start, end);
+
+	// Sorting the left part
+	quickSort1864(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1864(arr, p + 1, end);
+}
+
+// 
+
+int partition1865(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1865(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1865(arr, start, end);
+
+	// Sorting the left part
+	quickSort1865(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1865(arr, p + 1, end);
+}
+
+// 
+
+int partition1866(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1866(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1866(arr, start, end);
+
+	// Sorting the left part
+	quickSort1866(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1866(arr, p + 1, end);
+}
+
+// 
+
+int partition1867(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1867(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1867(arr, start, end);
+
+	// Sorting the left part
+	quickSort1867(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1867(arr, p + 1, end);
+}
+
+// 
+
+int partition1868(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1868(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1868(arr, start, end);
+
+	// Sorting the left part
+	quickSort1868(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1868(arr, p + 1, end);
+}
+
+// 
+
+int partition1869(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1869(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1869(arr, start, end);
+
+	// Sorting the left part
+	quickSort1869(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1869(arr, p + 1, end);
+}
+
+// 
+
+int partition1870(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1870(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1870(arr, start, end);
+
+	// Sorting the left part
+	quickSort1870(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1870(arr, p + 1, end);
+}
+
+// 
+
+int partition1871(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1871(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1871(arr, start, end);
+
+	// Sorting the left part
+	quickSort1871(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1871(arr, p + 1, end);
+}
+
+// 
+
+int partition1872(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1872(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1872(arr, start, end);
+
+	// Sorting the left part
+	quickSort1872(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1872(arr, p + 1, end);
+}
+
+// 
+
+int partition1873(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1873(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1873(arr, start, end);
+
+	// Sorting the left part
+	quickSort1873(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1873(arr, p + 1, end);
+}
+
+// 
+
+int partition1874(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1874(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1874(arr, start, end);
+
+	// Sorting the left part
+	quickSort1874(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1874(arr, p + 1, end);
+}
+
+// 
+
+int partition1875(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1875(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1875(arr, start, end);
+
+	// Sorting the left part
+	quickSort1875(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1875(arr, p + 1, end);
+}
+
+// 
+
+int partition1876(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1876(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1876(arr, start, end);
+
+	// Sorting the left part
+	quickSort1876(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1876(arr, p + 1, end);
+}
+
+// 
+
+int partition1877(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1877(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1877(arr, start, end);
+
+	// Sorting the left part
+	quickSort1877(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1877(arr, p + 1, end);
+}
+
+// 
+
+int partition1878(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1878(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1878(arr, start, end);
+
+	// Sorting the left part
+	quickSort1878(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1878(arr, p + 1, end);
+}
+
+// 
+
+int partition1879(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1879(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1879(arr, start, end);
+
+	// Sorting the left part
+	quickSort1879(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1879(arr, p + 1, end);
+}
+
+// 
+
+int partition1880(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1880(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1880(arr, start, end);
+
+	// Sorting the left part
+	quickSort1880(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1880(arr, p + 1, end);
+}
+
+// 
+
+int partition1881(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1881(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1881(arr, start, end);
+
+	// Sorting the left part
+	quickSort1881(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1881(arr, p + 1, end);
+}
+
+// 
+
+int partition1882(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1882(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1882(arr, start, end);
+
+	// Sorting the left part
+	quickSort1882(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1882(arr, p + 1, end);
+}
+
+// 
+
+int partition1883(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1883(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1883(arr, start, end);
+
+	// Sorting the left part
+	quickSort1883(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1883(arr, p + 1, end);
+}
+
+// 
+
+int partition1884(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1884(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1884(arr, start, end);
+
+	// Sorting the left part
+	quickSort1884(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1884(arr, p + 1, end);
+}
+
+// 
+
+int partition1885(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1885(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1885(arr, start, end);
+
+	// Sorting the left part
+	quickSort1885(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1885(arr, p + 1, end);
+}
+
+// 
+
+int partition1886(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1886(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1886(arr, start, end);
+
+	// Sorting the left part
+	quickSort1886(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1886(arr, p + 1, end);
+}
+
+// 
+
+int partition1887(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1887(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1887(arr, start, end);
+
+	// Sorting the left part
+	quickSort1887(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1887(arr, p + 1, end);
+}
+
+// 
+
+int partition1888(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1888(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1888(arr, start, end);
+
+	// Sorting the left part
+	quickSort1888(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1888(arr, p + 1, end);
+}
+
+// 
+
+int partition1889(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1889(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1889(arr, start, end);
+
+	// Sorting the left part
+	quickSort1889(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1889(arr, p + 1, end);
+}
+
+// 
+
+int partition1890(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1890(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1890(arr, start, end);
+
+	// Sorting the left part
+	quickSort1890(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1890(arr, p + 1, end);
+}
+
+// 
+
+int partition1891(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1891(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1891(arr, start, end);
+
+	// Sorting the left part
+	quickSort1891(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1891(arr, p + 1, end);
+}
+
+// 
+
+int partition1892(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1892(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1892(arr, start, end);
+
+	// Sorting the left part
+	quickSort1892(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1892(arr, p + 1, end);
+}
+
+// 
+
+int partition1893(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1893(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1893(arr, start, end);
+
+	// Sorting the left part
+	quickSort1893(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1893(arr, p + 1, end);
+}
+
+// 
+
+int partition1894(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1894(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1894(arr, start, end);
+
+	// Sorting the left part
+	quickSort1894(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1894(arr, p + 1, end);
+}
+
+// 
+
+int partition1895(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1895(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1895(arr, start, end);
+
+	// Sorting the left part
+	quickSort1895(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1895(arr, p + 1, end);
+}
+
+// 
+
+int partition1896(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1896(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1896(arr, start, end);
+
+	// Sorting the left part
+	quickSort1896(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1896(arr, p + 1, end);
+}
+
+// 
+
+int partition1897(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1897(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1897(arr, start, end);
+
+	// Sorting the left part
+	quickSort1897(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1897(arr, p + 1, end);
+}
+
+// 
+
+int partition1898(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1898(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1898(arr, start, end);
+
+	// Sorting the left part
+	quickSort1898(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1898(arr, p + 1, end);
+}
+
+// 
+
+int partition1899(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1899(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1899(arr, start, end);
+
+	// Sorting the left part
+	quickSort1899(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1899(arr, p + 1, end);
+}
+
+// 
+
+int partition1900(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1900(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1900(arr, start, end);
+
+	// Sorting the left part
+	quickSort1900(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1900(arr, p + 1, end);
+}
+
+// 
+
+int partition1901(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1901(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1901(arr, start, end);
+
+	// Sorting the left part
+	quickSort1901(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1901(arr, p + 1, end);
+}
+
+// 
+
+int partition1902(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1902(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1902(arr, start, end);
+
+	// Sorting the left part
+	quickSort1902(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1902(arr, p + 1, end);
+}
+
+// 
+
+int partition1903(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1903(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1903(arr, start, end);
+
+	// Sorting the left part
+	quickSort1903(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1903(arr, p + 1, end);
+}
+
+// 
+
+int partition1904(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1904(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1904(arr, start, end);
+
+	// Sorting the left part
+	quickSort1904(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1904(arr, p + 1, end);
+}
+
+// 
+
+int partition1905(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1905(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1905(arr, start, end);
+
+	// Sorting the left part
+	quickSort1905(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1905(arr, p + 1, end);
+}
+
+// 
+
+int partition1906(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1906(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1906(arr, start, end);
+
+	// Sorting the left part
+	quickSort1906(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1906(arr, p + 1, end);
+}
+
+// 
+
+int partition1907(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1907(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1907(arr, start, end);
+
+	// Sorting the left part
+	quickSort1907(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1907(arr, p + 1, end);
+}
+
+// 
+
+int partition1908(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1908(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1908(arr, start, end);
+
+	// Sorting the left part
+	quickSort1908(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1908(arr, p + 1, end);
+}
+
+// 
+
+int partition1909(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1909(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1909(arr, start, end);
+
+	// Sorting the left part
+	quickSort1909(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1909(arr, p + 1, end);
+}
+
+// 
+
+int partition1910(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1910(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1910(arr, start, end);
+
+	// Sorting the left part
+	quickSort1910(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1910(arr, p + 1, end);
+}
+
+// 
+
+int partition1911(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1911(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1911(arr, start, end);
+
+	// Sorting the left part
+	quickSort1911(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1911(arr, p + 1, end);
+}
+
+// 
+
+int partition1912(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1912(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1912(arr, start, end);
+
+	// Sorting the left part
+	quickSort1912(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1912(arr, p + 1, end);
+}
+
+// 
+
+int partition1913(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1913(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1913(arr, start, end);
+
+	// Sorting the left part
+	quickSort1913(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1913(arr, p + 1, end);
+}
+
+// 
+
+int partition1914(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1914(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1914(arr, start, end);
+
+	// Sorting the left part
+	quickSort1914(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1914(arr, p + 1, end);
+}
+
+// 
+
+int partition1915(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1915(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1915(arr, start, end);
+
+	// Sorting the left part
+	quickSort1915(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1915(arr, p + 1, end);
+}
+
+// 
+
+int partition1916(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1916(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1916(arr, start, end);
+
+	// Sorting the left part
+	quickSort1916(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1916(arr, p + 1, end);
+}
+
+// 
+
+int partition1917(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1917(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1917(arr, start, end);
+
+	// Sorting the left part
+	quickSort1917(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1917(arr, p + 1, end);
+}
+
+// 
+
+int partition1918(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1918(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1918(arr, start, end);
+
+	// Sorting the left part
+	quickSort1918(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1918(arr, p + 1, end);
+}
+
+// 
+
+int partition1919(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1919(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1919(arr, start, end);
+
+	// Sorting the left part
+	quickSort1919(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1919(arr, p + 1, end);
+}
+
+// 
+
+int partition1920(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1920(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1920(arr, start, end);
+
+	// Sorting the left part
+	quickSort1920(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1920(arr, p + 1, end);
+}
+
+// 
+
+int partition1921(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1921(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1921(arr, start, end);
+
+	// Sorting the left part
+	quickSort1921(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1921(arr, p + 1, end);
+}
+
+// 
+
+int partition1922(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1922(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1922(arr, start, end);
+
+	// Sorting the left part
+	quickSort1922(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1922(arr, p + 1, end);
+}
+
+// 
+
+int partition1923(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1923(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1923(arr, start, end);
+
+	// Sorting the left part
+	quickSort1923(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1923(arr, p + 1, end);
+}
+
+// 
+
+int partition1924(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1924(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1924(arr, start, end);
+
+	// Sorting the left part
+	quickSort1924(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1924(arr, p + 1, end);
+}
+
+// 
+
+int partition1925(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1925(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1925(arr, start, end);
+
+	// Sorting the left part
+	quickSort1925(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1925(arr, p + 1, end);
+}
+
+// 
+
+int partition1926(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1926(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1926(arr, start, end);
+
+	// Sorting the left part
+	quickSort1926(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1926(arr, p + 1, end);
+}
+
+// 
+
+int partition1927(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1927(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1927(arr, start, end);
+
+	// Sorting the left part
+	quickSort1927(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1927(arr, p + 1, end);
+}
+
+// 
+
+int partition1928(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1928(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1928(arr, start, end);
+
+	// Sorting the left part
+	quickSort1928(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1928(arr, p + 1, end);
+}
+
+// 
+
+int partition1929(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1929(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1929(arr, start, end);
+
+	// Sorting the left part
+	quickSort1929(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1929(arr, p + 1, end);
+}
+
+// 
+
+int partition1930(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1930(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1930(arr, start, end);
+
+	// Sorting the left part
+	quickSort1930(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1930(arr, p + 1, end);
+}
+
+// 
+
+int partition1931(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1931(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1931(arr, start, end);
+
+	// Sorting the left part
+	quickSort1931(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1931(arr, p + 1, end);
+}
+
+// 
+
+int partition1932(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1932(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1932(arr, start, end);
+
+	// Sorting the left part
+	quickSort1932(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1932(arr, p + 1, end);
+}
+
+// 
+
+int partition1933(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1933(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1933(arr, start, end);
+
+	// Sorting the left part
+	quickSort1933(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1933(arr, p + 1, end);
+}
+
+// 
+
+int partition1934(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1934(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1934(arr, start, end);
+
+	// Sorting the left part
+	quickSort1934(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1934(arr, p + 1, end);
+}
+
+// 
+
+int partition1935(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1935(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1935(arr, start, end);
+
+	// Sorting the left part
+	quickSort1935(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1935(arr, p + 1, end);
+}
+
+// 
+
+int partition1936(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1936(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1936(arr, start, end);
+
+	// Sorting the left part
+	quickSort1936(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1936(arr, p + 1, end);
+}
+
+// 
+
+int partition1937(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1937(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1937(arr, start, end);
+
+	// Sorting the left part
+	quickSort1937(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1937(arr, p + 1, end);
+}
+
+// 
+
+int partition1938(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1938(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1938(arr, start, end);
+
+	// Sorting the left part
+	quickSort1938(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1938(arr, p + 1, end);
+}
+
+// 
+
+int partition1939(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1939(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1939(arr, start, end);
+
+	// Sorting the left part
+	quickSort1939(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1939(arr, p + 1, end);
+}
+
+// 
+
+int partition1940(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1940(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1940(arr, start, end);
+
+	// Sorting the left part
+	quickSort1940(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1940(arr, p + 1, end);
+}
+
+// 
+
+int partition1941(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1941(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1941(arr, start, end);
+
+	// Sorting the left part
+	quickSort1941(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1941(arr, p + 1, end);
+}
+
+// 
+
+int partition1942(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1942(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1942(arr, start, end);
+
+	// Sorting the left part
+	quickSort1942(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1942(arr, p + 1, end);
+}
+
+// 
+
+int partition1943(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1943(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1943(arr, start, end);
+
+	// Sorting the left part
+	quickSort1943(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1943(arr, p + 1, end);
+}
+
+// 
+
+int partition1944(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1944(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1944(arr, start, end);
+
+	// Sorting the left part
+	quickSort1944(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1944(arr, p + 1, end);
+}
+
+// 
+
+int partition1945(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1945(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1945(arr, start, end);
+
+	// Sorting the left part
+	quickSort1945(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1945(arr, p + 1, end);
+}
+
+// 
+
+int partition1946(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1946(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1946(arr, start, end);
+
+	// Sorting the left part
+	quickSort1946(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1946(arr, p + 1, end);
+}
+
+// 
+
+int partition1947(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1947(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1947(arr, start, end);
+
+	// Sorting the left part
+	quickSort1947(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1947(arr, p + 1, end);
+}
+
+// 
+
+int partition1948(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1948(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1948(arr, start, end);
+
+	// Sorting the left part
+	quickSort1948(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1948(arr, p + 1, end);
+}
+
+// 
+
+int partition1949(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1949(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1949(arr, start, end);
+
+	// Sorting the left part
+	quickSort1949(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1949(arr, p + 1, end);
+}
+
+// 
+
+int partition1950(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1950(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1950(arr, start, end);
+
+	// Sorting the left part
+	quickSort1950(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1950(arr, p + 1, end);
+}
+
+// 
+
+int partition1951(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1951(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1951(arr, start, end);
+
+	// Sorting the left part
+	quickSort1951(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1951(arr, p + 1, end);
+}
+
+// 
+
+int partition1952(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1952(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1952(arr, start, end);
+
+	// Sorting the left part
+	quickSort1952(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1952(arr, p + 1, end);
+}
+
+// 
+
+int partition1953(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1953(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1953(arr, start, end);
+
+	// Sorting the left part
+	quickSort1953(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1953(arr, p + 1, end);
+}
+
+// 
+
+int partition1954(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1954(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1954(arr, start, end);
+
+	// Sorting the left part
+	quickSort1954(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1954(arr, p + 1, end);
+}
+
+// 
+
+int partition1955(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1955(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1955(arr, start, end);
+
+	// Sorting the left part
+	quickSort1955(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1955(arr, p + 1, end);
+}
+
+// 
+
+int partition1956(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1956(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1956(arr, start, end);
+
+	// Sorting the left part
+	quickSort1956(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1956(arr, p + 1, end);
+}
+
+// 
+
+int partition1957(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1957(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1957(arr, start, end);
+
+	// Sorting the left part
+	quickSort1957(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1957(arr, p + 1, end);
+}
+
+// 
+
+int partition1958(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1958(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1958(arr, start, end);
+
+	// Sorting the left part
+	quickSort1958(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1958(arr, p + 1, end);
+}
+
+// 
+
+int partition1959(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1959(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1959(arr, start, end);
+
+	// Sorting the left part
+	quickSort1959(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1959(arr, p + 1, end);
+}
+
+// 
+
+int partition1960(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1960(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1960(arr, start, end);
+
+	// Sorting the left part
+	quickSort1960(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1960(arr, p + 1, end);
+}
+
+// 
+
+int partition1961(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1961(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1961(arr, start, end);
+
+	// Sorting the left part
+	quickSort1961(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1961(arr, p + 1, end);
+}
+
+// 
+
+int partition1962(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1962(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1962(arr, start, end);
+
+	// Sorting the left part
+	quickSort1962(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1962(arr, p + 1, end);
+}
+
+// 
+
+int partition1963(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1963(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1963(arr, start, end);
+
+	// Sorting the left part
+	quickSort1963(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1963(arr, p + 1, end);
+}
+
+// 
+
+int partition1964(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1964(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1964(arr, start, end);
+
+	// Sorting the left part
+	quickSort1964(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1964(arr, p + 1, end);
+}
+
+// 
+
+int partition1965(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1965(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1965(arr, start, end);
+
+	// Sorting the left part
+	quickSort1965(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1965(arr, p + 1, end);
+}
+
+// 
+
+int partition1966(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1966(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1966(arr, start, end);
+
+	// Sorting the left part
+	quickSort1966(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1966(arr, p + 1, end);
+}
+
+// 
+
+int partition1967(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1967(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1967(arr, start, end);
+
+	// Sorting the left part
+	quickSort1967(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1967(arr, p + 1, end);
+}
+
+// 
+
+int partition1968(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1968(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1968(arr, start, end);
+
+	// Sorting the left part
+	quickSort1968(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1968(arr, p + 1, end);
+}
+
+// 
+
+int partition1969(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1969(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1969(arr, start, end);
+
+	// Sorting the left part
+	quickSort1969(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1969(arr, p + 1, end);
+}
+
+// 
+
+int partition1970(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1970(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1970(arr, start, end);
+
+	// Sorting the left part
+	quickSort1970(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1970(arr, p + 1, end);
+}
+
+// 
+
+int partition1971(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1971(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1971(arr, start, end);
+
+	// Sorting the left part
+	quickSort1971(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1971(arr, p + 1, end);
+}
+
+// 
+
+int partition1972(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1972(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1972(arr, start, end);
+
+	// Sorting the left part
+	quickSort1972(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1972(arr, p + 1, end);
+}
+
+// 
+
+int partition1973(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1973(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1973(arr, start, end);
+
+	// Sorting the left part
+	quickSort1973(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1973(arr, p + 1, end);
+}
+
+// 
+
+int partition1974(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1974(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1974(arr, start, end);
+
+	// Sorting the left part
+	quickSort1974(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1974(arr, p + 1, end);
+}
+
+// 
+
+int partition1975(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1975(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1975(arr, start, end);
+
+	// Sorting the left part
+	quickSort1975(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1975(arr, p + 1, end);
+}
+
+// 
+
+int partition1976(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1976(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1976(arr, start, end);
+
+	// Sorting the left part
+	quickSort1976(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1976(arr, p + 1, end);
+}
+
+// 
+
+int partition1977(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1977(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1977(arr, start, end);
+
+	// Sorting the left part
+	quickSort1977(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1977(arr, p + 1, end);
+}
+
+// 
+
+int partition1978(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1978(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1978(arr, start, end);
+
+	// Sorting the left part
+	quickSort1978(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1978(arr, p + 1, end);
+}
+
+// 
+
+int partition1979(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1979(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1979(arr, start, end);
+
+	// Sorting the left part
+	quickSort1979(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1979(arr, p + 1, end);
+}
+
+// 
+
+int partition1980(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1980(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1980(arr, start, end);
+
+	// Sorting the left part
+	quickSort1980(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1980(arr, p + 1, end);
+}
+
+// 
+
+int partition1981(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1981(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1981(arr, start, end);
+
+	// Sorting the left part
+	quickSort1981(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1981(arr, p + 1, end);
+}
+
+// 
+
+int partition1982(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1982(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1982(arr, start, end);
+
+	// Sorting the left part
+	quickSort1982(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1982(arr, p + 1, end);
+}
+
+// 
+
+int partition1983(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1983(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1983(arr, start, end);
+
+	// Sorting the left part
+	quickSort1983(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1983(arr, p + 1, end);
+}
+
+// 
+
+int partition1984(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1984(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1984(arr, start, end);
+
+	// Sorting the left part
+	quickSort1984(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1984(arr, p + 1, end);
+}
+
+// 
+
+int partition1985(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1985(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1985(arr, start, end);
+
+	// Sorting the left part
+	quickSort1985(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1985(arr, p + 1, end);
+}
+
+// 
+
+int partition1986(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1986(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1986(arr, start, end);
+
+	// Sorting the left part
+	quickSort1986(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1986(arr, p + 1, end);
+}
+
+// 
+
+int partition1987(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1987(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1987(arr, start, end);
+
+	// Sorting the left part
+	quickSort1987(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1987(arr, p + 1, end);
+}
+
+// 
+
+int partition1988(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1988(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1988(arr, start, end);
+
+	// Sorting the left part
+	quickSort1988(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1988(arr, p + 1, end);
+}
+
+// 
+
+int partition1989(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1989(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1989(arr, start, end);
+
+	// Sorting the left part
+	quickSort1989(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1989(arr, p + 1, end);
+}
+
+// 
+
+int partition1990(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1990(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1990(arr, start, end);
+
+	// Sorting the left part
+	quickSort1990(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1990(arr, p + 1, end);
+}
+
+// 
+
+int partition1991(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1991(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1991(arr, start, end);
+
+	// Sorting the left part
+	quickSort1991(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1991(arr, p + 1, end);
+}
+
+// 
+
+int partition1992(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1992(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1992(arr, start, end);
+
+	// Sorting the left part
+	quickSort1992(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1992(arr, p + 1, end);
+}
+
+// 
+
+int partition1993(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1993(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1993(arr, start, end);
+
+	// Sorting the left part
+	quickSort1993(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1993(arr, p + 1, end);
+}
+
+// 
+
+int partition1994(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1994(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1994(arr, start, end);
+
+	// Sorting the left part
+	quickSort1994(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1994(arr, p + 1, end);
+}
+
+// 
+
+int partition1995(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1995(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1995(arr, start, end);
+
+	// Sorting the left part
+	quickSort1995(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1995(arr, p + 1, end);
+}
+
+// 
+
+int partition1996(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1996(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1996(arr, start, end);
+
+	// Sorting the left part
+	quickSort1996(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1996(arr, p + 1, end);
+}
+
+// 
+
+int partition1997(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1997(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1997(arr, start, end);
+
+	// Sorting the left part
+	quickSort1997(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1997(arr, p + 1, end);
+}
+
+// 
+
+int partition1998(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1998(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1998(arr, start, end);
+
+	// Sorting the left part
+	quickSort1998(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1998(arr, p + 1, end);
+}
+
+// 
+
+int partition1999(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort1999(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition1999(arr, start, end);
+
+	// Sorting the left part
+	quickSort1999(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort1999(arr, p + 1, end);
+}
+
+// 
+
+int partition2000(int arr[], int start, int end) {
+	int pivot = arr[start];
+
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
+		}
+	}
+
+	return pivotIndex;
+}
+
+void quickSort2000(int arr[], int start, int end) {
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition2000(arr, start, end);
+
+	// Sorting the left part
+	quickSort2000(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort2000(arr, p + 1, end);
 }
 
 // 
