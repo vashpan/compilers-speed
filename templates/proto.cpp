@@ -1,6 +1,6 @@
 // __HEADER_BEGIN__
 //
-// C compile time test program
+// C++ compile time test program
 //
 
 #include <cstdlib>
@@ -73,7 +73,7 @@ int main() {
     
     printArray(arr, n);
 
-	quickSort0001(arr, 0, n - 1);
+	quickSort__NNNN__(arr, 0, n - 1);
 
 	printArray(arr, n);
 
