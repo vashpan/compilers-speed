@@ -6,8 +6,6 @@ def generate_test_file(input_file, n):
     with open(input_file, 'r') as file:
         source_code = file.read()
     
-    
-    
     header_start = source_code.find('__HEADER_BEGIN__') + len('__HEADER_BEGIN__')
     header_end = source_code.find('__HEADER_END__') + len('__HEADER_END__')
     footer_start = source_code.find('__FOOTER_BEGIN__') + len('__FOOTER_BEGIN__')
@@ -30,6 +28,9 @@ def generate_test_file(input_file, n):
     result_code = result_code.replace('__HEADER_END__', '')
     result_code = result_code.replace('__FOOTER_BEGIN__', '')
     result_code = result_code.replace('__FOOTER_END__', '')
+
+    # Replace __NNNN__ in footer to some real value
+    result_code = result_code.replace('__NNNN__', f'{1:04d}')
 
     # Save the result to "test.cpp"
     with open('test.cpp', 'w') as result_file:
