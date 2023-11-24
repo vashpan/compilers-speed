@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import sys
+import os, sys
 
-def generate_test_file(input_file, n):
+def generate_test_file(input_file, output_file, n):
     with open(input_file, 'r') as file:
         source_code = file.read()
     
@@ -15,7 +15,7 @@ def generate_test_file(input_file, n):
     body = source_code[header_end:footer_start]
     footer = source_code[footer_start:footer_end]
 
-    # Generate the multiplied center section
+    # generate the multiplied center section
     multiplied_body = ''
     for i in range(n):
         replaced_body = body.replace('__NNNN__', f'{i+1:04d}')
@@ -23,17 +23,17 @@ def generate_test_file(input_file, n):
 
     result_code = f'{header}{multiplied_body}{footer}'
 
-    # Remove unecessary tags (FOR SOME REASON DOESN'T WORK?)
+    # remove unecessary tags (FOR SOME REASON DOESN'T WORK?)
     result_code = result_code.replace('__HEADER_BEGIN__', '')
     result_code = result_code.replace('__HEADER_END__', '')
     result_code = result_code.replace('__FOOTER_BEGIN__', '')
     result_code = result_code.replace('__FOOTER_END__', '')
 
-    # Replace __NNNN__ in footer to some real value
+    # replace __NNNN__ in footer to some real value
     result_code = result_code.replace('__NNNN__', f'{1:04d}')
 
-    # Save the result to "test.cpp"
-    with open('test.cpp', 'w') as result_file:
+    # save the result
+    with open(output_file, 'w') as result_file:
         result_file.write(result_code)
 
 
@@ -46,5 +46,7 @@ if len(sys.argv) != 3:
 input_file = sys.argv[1]
 n = int(sys.argv[2])
 
-generate_test_file(input_file, n)
-print(f"File 'test.cpp' generated with {n} repetitions.")
+output_file = f'test{os.path.splitext(input_file)[1]}'
+
+generate_test_file(input_file, output_file, n)
+print(f'File "{output_file}" generated with {n} repetitions.')
