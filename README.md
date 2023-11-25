@@ -14,6 +14,20 @@ Each language has "quick sort" algorithm implemented, which is then duplicated N
 
 This is rather naive approach and much more factors could affect compiling speed, but it could give us a rough estimate and comparison point.
 
+## Results
+
+All results compared to baseline, which is good-old C language.
+
+| Language | Debug Build Time (s)  | Release Build Time (s) |
+|----------|----------------------:|-----------------------:|
+| **C**    |      **0.883 (100%)** |      **13.430 (100%)** |
+| C++      |      1.120 (126.84%)  |       14.370 (107.00%) |
+| Go       |      0.410 (46.43%)   |         0.410 (3.05%)  |
+| Rust     |      1.790 (202.72%)  |         1.700 (12.66%) |
+| Swift    |     10.780 (1220.83%) |       23.870 (177.74%) |
+
+*Calculated on Apple M1 Pro on MacBook Pro 14-inch (2021)*
+
 ## Performing tests
 
 ### C
