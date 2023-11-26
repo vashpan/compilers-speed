@@ -4,9 +4,9 @@
 
 Remember how old Borland tools showed speed of compilation? I would like to check that for modern compilers!
 
-This is a simple toy project to measure speed of compilers of languages that compiles directly to machine code.
+Right now following languages are supported: **C, C++, Go, Rust, Swift**. Feel free to add yours, pull requests are welcome. You'll find instructions [below](#adding-new-languages) how to do that.
 
-Right now following languages are supported: **C, C++, Go, Rust, Swift**. Feel free to add yours, pull requests are appreciated. You'll find instructions [below](#adding-new-languages) how to do that.
+Right now it's focused on languages that compiles directly to machine code, to maintain some comparability between them, but it would be interesting comparison to add VM-based languages as well (like Java or C#).
 
 ## Approach
 
@@ -26,7 +26,7 @@ All results compared to baseline, which is good-old C language.
 | Rust     |      1.790 (202.72%)  |         1.700 (12.66%) |
 | Swift    |     10.780 (1220.83%) |       23.870 (177.74%) |
 
-*Calculated on Apple M1 Pro on MacBook Pro 14-inch (2021)*
+*Measured on MacBook Pro 14-inch (2021) with Apple M1 Pro*
 
 ## Performing tests
 
