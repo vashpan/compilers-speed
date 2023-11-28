@@ -6,6 +6,7 @@ def generate_test_file(input_file, output_file, n):
     with open(input_file, 'r') as file:
         source_code = file.read()
     
+    # generate header and multiplied center section
     header_start = source_code.find('__HEADER_BEGIN__') + len('__HEADER_BEGIN__')
     header_end = source_code.find('__HEADER_END__') + len('__HEADER_END__')
     footer_start = source_code.find('__FOOTER_BEGIN__') + len('__FOOTER_BEGIN__')
@@ -15,22 +16,34 @@ def generate_test_file(input_file, output_file, n):
     body = source_code[header_end:footer_start]
     footer = source_code[footer_start:footer_end]
 
-    # generate the multiplied center section
     multiplied_body = ''
     for i in range(n):
         replaced_body = body.replace('__NNNN__', f'{i+1:04d}')
         multiplied_body += replaced_body
 
+    # generate the multiplied repetitions section in footer
+    repetitions_start = footer.find('__REPETITIONS_BEGIN__') + len('__REPETITIONS_BEGIN__')
+    repetitions_end = footer.find('__REPETITIONS_END__') + len('__REPETITIONS_END__')
+
+    repetited_body = footer[repetitions_start:repetitions_end]
+
+    multiplied_repetitions = ''
+    for i in range(n):
+        current_repetited_body = repetited_body.replace('__NNNN__', f'{i+1:04d}')
+        multiplied_repetitions += current_repetited_body
+
+    footer = footer.replace(repetited_body, multiplied_repetitions)
+
+    # add all components
     result_code = f'{header}{multiplied_body}{footer}'
 
-    # remove unecessary tags (FOR SOME REASON DOESN'T WORK?)
+    # remove unecessary tags
     result_code = result_code.replace('__HEADER_BEGIN__', '')
     result_code = result_code.replace('__HEADER_END__', '')
     result_code = result_code.replace('__FOOTER_BEGIN__', '')
     result_code = result_code.replace('__FOOTER_END__', '')
-
-    # replace __NNNN__ in footer to some real value
-    result_code = result_code.replace('__NNNN__', f'{1:04d}')
+    result_code = result_code.replace('__REPETITIONS_BEGIN__', '')
+    result_code = result_code.replace('__REPETITIONS_END__', '')
 
     # save the result
     with open(output_file, 'w') as result_file:
