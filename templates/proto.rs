@@ -3,6 +3,49 @@
 // Rust compile time test program
 //
 
+#![allow(arithmetic_overflow)]
+#![allow(non_snake_case)]
+
+use std::time::{SystemTime, UNIX_EPOCH};
+
+// Simple random generator as Rust doesn't seem to have it in its standard lib (?)
+struct Rand {
+    seed: i64,
+    a: i64,
+    c: i64,
+    m: i64,
+}
+
+impl Rand {
+    fn new() -> Self {
+        // Get the current time in nanoseconds as a seed
+        let nanos = SystemTime::now()
+                .duration_since(UNIX_EPOCH)
+                .expect("Time went backwards")
+                .as_nanos();
+        
+        // "nanos" i a 128 bit, to avoid overflow just cut it to 16 bits
+        let seed = (nanos & 0xFFFF) as i64;
+
+        Rand { 
+            seed: seed as i64,
+            a: 16_807,
+            c: 0,
+            m: 2_147_483_647
+        }
+    }
+
+    fn next(&mut self) -> i32 {
+        let seed = self.seed;
+        let a = self.a;
+        let c = self.c;
+        let m = self.m;
+        self.seed = (a * seed + c) % m;
+
+        (self.seed & 0xFFFFFFFF) as i32
+    }
+}
+
 // __HEADER_END__
 
 fn partition__NNNN__(arr: &mut [i32], start: usize, end: usize) -> usize {
@@ -63,6 +106,12 @@ fn quick_sort__NNNN__(arr: &mut [i32], start: usize, end: usize) {
 }
 
 // __FOOTER_BEGIN__
+fn randomize_array(arr: &mut [i32], rng: &mut Rand) {
+    for i in arr {
+        *i = rng.next() % 10;
+    }
+}
+
 fn print_array(arr: &[i32]) {
     for &element in arr {
         print!("{} ", element);
@@ -72,12 +121,16 @@ fn print_array(arr: &[i32]) {
 }
 
 fn main() {
-    let mut arr = vec![9, 3, 4, 2, 1, 8];
-    let n = arr.len();
+    const N: usize = 6; 
+    let mut arr = vec![0; N];
 
+    let mut rng = Rand::new();
+
+    // __REPETITIONS_BEGIN__
+    randomize_array(&mut arr, &mut rng);
+    quick_sort__NNNN__(&mut arr, 0, N - 1);
     print_array(&arr);
-    quick_sort__NNNN__(&mut arr, 0, n - 1);
-    print_array(&arr);
+    // __REPETITIONS_END__
 }
 
 // __FOOTER_END__

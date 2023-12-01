@@ -5,9 +5,19 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 // __HEADER_END__
+
+func swap__NNNN__(a *int, b *int) {
+	c := *a
+	*a = *b
+	*b = c
+}
 
 func partition__NNNN__(arr []int, start int, end int) int {
 	pivot := arr[start]
@@ -21,7 +31,7 @@ func partition__NNNN__(arr []int, start int, end int) int {
 
 	// Giving pivot element its correct position
 	pivotIndex := start + count
-	arr[pivotIndex], arr[start] = arr[start], arr[pivotIndex]
+	swap__NNNN__(&arr[pivotIndex], &arr[start])
 
 	// Sorting left and right parts of the pivot element
 	i, j := start, end
@@ -36,7 +46,7 @@ func partition__NNNN__(arr []int, start int, end int) int {
 		}
 
 		if i < pivotIndex && j > pivotIndex {
-			arr[i], arr[j] = arr[j], arr[i]
+			swap__NNNN__(&arr[i], &arr[j])
 			i++
 			j--
 		}
@@ -46,12 +56,12 @@ func partition__NNNN__(arr []int, start int, end int) int {
 }
 
 func quickSort__NNNN__(arr []int, start int, end int) {
-	// base case
+	// Base case
 	if start >= end {
 		return
 	}
 
-	// partitioning the array
+	// Partitioning the array
 	p := partition__NNNN__(arr, start, end)
 
 	// Sorting the left part
@@ -62,20 +72,32 @@ func quickSort__NNNN__(arr []int, start int, end int) {
 }
 
 // __FOOTER_BEGIN__
-func printArray(arr []int) {
-	for _, element := range arr {
-		fmt.Printf("%d ", element)
+func randomizeArray(arr []int, size int) {
+	for i := 0; i < size; i++ {
+		arr[i] = rand.Intn(10)
+	}
+}
+
+func printArray(arr []int, size int) {
+	for i := 0; i < size; i++ {
+		fmt.Printf("%d ", arr[i])
 	}
 
 	fmt.Println()
 }
 
 func main() {
-	arr := []int{9, 3, 4, 2, 1, 8}
-	n := len(arr)
+	const n = 6
+	arr := make([]int, n)
 
-	printArray(arr)
+	rand.Seed(time.Now().UnixNano())
+
+	// __REPETITIONS_BEGIN__
+	randomizeArray(arr, n)
 	quickSort__NNNN__(arr, 0, n-1)
-	printArray(arr)
+	printArray(arr, n)
+	// __REPETITIONS_END__
+
 }
+
 // __FOOTER_END__

@@ -61,6 +61,12 @@ func quickSort__NNNN__(_ arr: inout [Int], _ start: Int, _ end: Int) {
 }
 
 // __FOOTER_BEGIN__
+func randomizeArray(_ arr: inout [Int]) {
+    for i in 0..<arr.count {
+        arr[i] = Int.random(in: 0..<10)
+    }
+}
+
 func printArray(_ arr: [Int]) {
     for element in arr {
         print("\(element) ", terminator: "")
@@ -69,11 +75,13 @@ func printArray(_ arr: [Int]) {
     print()
 }
 
-var arr = [9, 3, 4, 2, 1, 8]
-let n = arr.count
+let n = 6
+var arr = [Int](repeating: 0, count: n)
 
-printArray(arr)
+// __REPETITIONS_BEGIN__
+randomizeArray(&arr)
 quickSort__NNNN__(&arr, 0, n - 1)
 printArray(arr)
+// __REPETITIONS_END__
 
 // __FOOTER_END__

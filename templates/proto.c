@@ -5,6 +5,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 // __HEADER_END__
 
@@ -63,6 +64,12 @@ void quickSort__NNNN__(int arr[], int start, int end) {
 }
 
 // __FOOTER_BEGIN__
+void randomizeArray(int arr[], int size) {
+	for (int i = 0; i < size; i++) {
+		arr[i] = rand() % 10;
+	}
+}
+
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
 		printf("%d ", arr[i]);
@@ -72,14 +79,16 @@ void printArray(int arr[], int size) {
 }
 
 int main() {
-	int arr[] = { 9, 3, 4, 2, 1, 8 };
-	int n = 6;
+	const int n = 6;
+	int arr[n] = { 0 };
     
-    printArray(arr, n);
+	srand(time(NULL));
 
+	// __REPETITIONS_BEGIN__
+	randomizeArray(arr, n);
 	quickSort__NNNN__(arr, 0, n - 1);
-
 	printArray(arr, n);
+	// __REPETITIONS_END__
 
 	return 0;
 }
