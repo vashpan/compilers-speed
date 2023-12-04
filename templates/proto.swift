@@ -75,13 +75,19 @@ func printArray(_ arr: [Int]) {
     print()
 }
 
-let n = 6
-var arr = [Int](repeating: 0, count: n)
+func main() {
+    let n = 6
+    var arr = [Int](repeating: 0, count: n)
 
-// __REPETITIONS_BEGIN__
-randomizeArray(&arr)
-quickSort__NNNN__(&arr, 0, n - 1)
-printArray(arr)
-// __REPETITIONS_END__
+    // __REPETITIONS_BEGIN__
+    randomizeArray(&arr)
+    quickSort__NNNN__(&arr, 0, n - 1)
+    printArray(arr)
+    // __REPETITIONS_END__
+
+}
+
+// for some reason, Swift compiler can't handle very large code without function
+main()
 
 // __FOOTER_END__
