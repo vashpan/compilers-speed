@@ -10,21 +10,21 @@ Right now it's focused on languages that compiles directly to machine code, to m
 
 ## Approach
 
-Each language has "quick sort" algorithm implemented, which is then duplicated N-times to achieve roughly 100,000 lines in a single source file.
+Each language has "quick sort" algorithm implemented, which is then duplicated N-times to achieve roughly 100,000 lines in a single source file. All generated functions are called to make sure compilers won't optimize unused functions.
 
 This is rather naive approach and much more factors could affect compiling speed, but it could give us a rough estimate and comparison point.
 
 ## Results
 
-All results compared to baseline, which is good-old C language.
+All results compared to the baseline, which is good-old C language. I measured each language 5 times removing best & worst result.
 
 | Language | Debug Build Time (s)  | Release Build Time (s) |
 |----------|----------------------:|-----------------------:|
-| **C**    |      **0.883 (100%)** |      **13.430 (100%)** |
-| C++      |      1.120 (126.84%)  |       14.370 (107.00%) |
-| Go       |      0.410 (46.43%)   |         0.410 (3.05%)  |
-| Rust     |      1.790 (202.72%)  |         1.700 (12.66%) |
-| Swift    |     10.780 (1220.83%) |       23.870 (177.74%) |
+| **C**    |      **0.752 (100%)** |      **79.613 (100%)** |
+| C++      |      1.203 (160.02%)  |      16.483 (20.70%)   |
+| Go       |      2.780 (369.68%)  |       2.780 (3.69%)    |
+| Rust     |      3.353 (445.92%)  |      48.877 (61.39%)   |
+| Swift    |     10.583 (1407.36%) |      25.017 (31.42%)   |
 
 *Measured on MacBook Pro 14-inch (2021) with Apple M1 Pro*
 
@@ -41,29 +41,29 @@ $ time clang -o test test.c
 
 For release:
 ```
-$ time clang -O3 -o test test.c 
+$ time clang -O2 -o test test.c 
 ```
 
 ### C++
 
-You can use either GCC or clang compiler, I used clang, for sure there'll be differences.
+You can use either GCC or clang compiler, I used clang, for sure there'll be differences. Use C++11 standard.
 
 For debug:
 ```
-$ time clang++ -o test test.cpp 
+$ time clang++ -std=c++11 -o test test.cpp
 ```
 
 For release:
 ```
-$ time clang++ -O3 -o test test.cpp 
+$ time clang++ -std=c++11 -O2 -o test test.cpp
 ```
 
 ### Go
 
-Official Go compiler is used. What's interesting, AFAIK there's no specific "release" mode for Go.
+Official Go compiler is used. Go is quite specific as we're using their build system here, so some flags needs to be passed to make things comparable to other languages. `-a` flag ignores cache, and `-p 1` is to make sure to use spawn one command at a time. What's interesting, AFAIK there's no specific "release" mode for Go.
 
 ```
-$ time go build test.go
+$ time go build -a -p 1 test.go
 ```
 
 ### Rust
@@ -72,12 +72,12 @@ Official Rust compiler is used. `--allow unused` flag is used to get rid of warn
 
 For debug:
 ```
-$ time rustc --allow unused -o test test.rs
+$ time rustc -o test test.rs
 ```
 
 For release:
 ```
-$ time rustc --allow unused -O -o test test.rs
+$ time rustc -O -o test test.rs
 ```
 
 ### Swift
